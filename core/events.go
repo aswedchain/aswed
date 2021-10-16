@@ -17,8 +17,8 @@
 package core
 
 import (
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

@@ -1,4 +1,4 @@
-module aswed.space/aswed/aswed
+module github.com/aswedchain/aswed
 
 go 1.17
 

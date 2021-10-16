@@ -23,10 +23,10 @@ import (
 	"sort"
 	"testing"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/discover/v4wire"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/discover/v4wire"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
 )
 
 func TestUDPv4_Lookup(t *testing.T) {

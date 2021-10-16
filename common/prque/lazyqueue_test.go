@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/mclock"
 )
 
 const (

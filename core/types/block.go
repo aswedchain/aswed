@@ -26,9 +26,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 var (

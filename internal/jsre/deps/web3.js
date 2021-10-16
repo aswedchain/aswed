@@ -5892,7 +5892,7 @@ module.exports = Shh;
  * @author Alex Beregszaszi <alex@rtfs.hu>
  * @date 2016
  *
- * Reference: https://aswed.space/aswed/aswed/blob/swarm/internal/web3ext/web3ext.go#L33
+ * Reference: https://github.com/aswedchain/aswed/blob/swarm/internal/web3ext/web3ext.go#L33
  */
 
 "use strict";

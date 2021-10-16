@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"aswed.space/aswed/aswed/tests/fuzzers/difficulty"
+	"github.com/aswedchain/aswed/tests/fuzzers/difficulty"
 )
 
 func main() {

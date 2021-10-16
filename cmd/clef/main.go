@@ -35,25 +35,25 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/internal/flags"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/node"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/rpc"
-	"aswed.space/aswed/aswed/signer/core"
-	"aswed.space/aswed/aswed/signer/core/apitypes"
-	"aswed.space/aswed/aswed/signer/fourbyte"
-	"aswed.space/aswed/aswed/signer/rules"
-	"aswed.space/aswed/aswed/signer/storage"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/internal/flags"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/node"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/rpc"
+	"github.com/aswedchain/aswed/signer/core"
+	"github.com/aswedchain/aswed/signer/core/apitypes"
+	"github.com/aswedchain/aswed/signer/fourbyte"
+	"github.com/aswedchain/aswed/signer/rules"
+	"github.com/aswedchain/aswed/signer/storage"
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"
 	"gopkg.in/urfave/cli.v1"
@@ -795,7 +795,7 @@ func checkFile(filename string) error {
 	}
 	// Check the unix permission bits
 	// However, on windows, we cannot use the unix perm-bits, see
-	// https://aswed.space/aswed/aswed/issues/20123
+	// https://github.com/aswedchain/aswed/issues/20123
 	if runtime.GOOS != "windows" && info.Mode().Perm()&0377 != 0 {
 		return fmt.Errorf("file (%v) has insecure file permissions (%v)", filename, info.Mode().String())
 	}

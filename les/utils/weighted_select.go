@@ -20,7 +20,7 @@ import (
 	"math"
 	"math/rand"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 type (

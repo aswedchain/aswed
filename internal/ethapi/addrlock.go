@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 type AddrLocker struct {

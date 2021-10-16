@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/event"
+	"github.com/aswedchain/aswed/event"
 )
 
 func ExampleNewSubscription() {

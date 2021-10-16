@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/log"
 	"github.com/olekukonko/tablewriter"
 )
 

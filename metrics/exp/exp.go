@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"sync"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/metrics/prometheus"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/metrics/prometheus"
 )
 
 type exp struct {

@@ -23,8 +23,8 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/crypto/secp256k1"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/crypto/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

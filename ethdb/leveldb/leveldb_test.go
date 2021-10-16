@@ -19,8 +19,8 @@ package leveldb
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/ethdb/dbtest"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/ethdb/dbtest"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/storage"
 )

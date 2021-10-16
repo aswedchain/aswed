@@ -23,13 +23,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/trie"
 )
 
 // ethHandler implements the eth.Backend interface to handle the various network

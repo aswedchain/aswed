@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sort"
 
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 	"github.com/holiman/uint256"
 )
 

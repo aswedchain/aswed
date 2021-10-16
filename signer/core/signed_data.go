@@ -30,15 +30,15 @@ import (
 	"strings"
 	"unicode"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/consensus/clique"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/signer/core/apitypes"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/consensus/clique"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/signer/core/apitypes"
 )
 
 type SigFormat struct {
@@ -652,7 +652,7 @@ func (api *SignerAPI) EcRecover(ctx context.Context, data hexutil.Bytes, sig hex
 	// Note, the signature must conform to the secp256k1 curve R, S and V values, where
 	// the V value must be be 27 or 28 for legacy reasons.
 	//
-	// https://aswed.space/aswed/aswed/wiki/Management-APIs#personal_ecRecover
+	// https://github.com/aswedchain/aswed/wiki/Management-APIs#personal_ecRecover
 	if len(sig) != 65 {
 		return common.Address{}, fmt.Errorf("signature must be 65 bytes long")
 	}

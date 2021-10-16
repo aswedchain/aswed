@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // Simulation provides a framework for running actions in a simulated network

@@ -17,9 +17,9 @@
 package eth
 
 import (
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/eth/protocols/snap"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/eth/protocols/snap"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // snapHandler implements the snap.Backend interface to handle the various network

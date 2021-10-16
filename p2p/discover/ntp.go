@@ -25,7 +25,7 @@ import (
 	"sort"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 const (

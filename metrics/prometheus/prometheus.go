@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"sort"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 // Handler returns an HTTP handler which dump metrics in Prometheus format.

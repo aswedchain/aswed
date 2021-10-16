@@ -22,9 +22,9 @@ import (
 	"testing"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
 )
 
 func copyDestructs(destructs map[common.Hash]struct{}) map[common.Hash]struct{} {

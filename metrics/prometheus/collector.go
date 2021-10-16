@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 var (

@@ -25,7 +25,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 type storedCredential struct {

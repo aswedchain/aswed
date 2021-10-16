@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"time"
 
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // In this example, our client wishes to track the latest 'block number'

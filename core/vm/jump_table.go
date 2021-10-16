@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 )
 
 type (

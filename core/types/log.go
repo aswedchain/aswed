@@ -19,9 +19,9 @@ package types
 import (
 	"io"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 //go:generate gencodec -type Log -field-override logMarshaling -out gen_log_json.go

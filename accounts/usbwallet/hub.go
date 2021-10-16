@@ -23,9 +23,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/log"
 	"github.com/karalabe/usb"
 )
 

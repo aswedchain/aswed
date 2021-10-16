@@ -19,8 +19,8 @@ package main
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 type crawler struct {

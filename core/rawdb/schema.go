@@ -21,8 +21,8 @@ import (
 	"bytes"
 	"encoding/binary"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 // The fields below define the low level database schema prefixing.

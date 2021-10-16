@@ -21,7 +21,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // resultStore implements a structure for maintaining fetchResults, tracking their

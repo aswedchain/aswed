@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 )
 
 const (

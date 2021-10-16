@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"strings"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

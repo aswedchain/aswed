@@ -24,8 +24,8 @@ import (
 	"testing"
 	"testing/quick"
 
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

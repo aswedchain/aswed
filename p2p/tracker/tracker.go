@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 const (

@@ -21,7 +21,7 @@ import (
 	"strings"
 	"unicode"
 
-	"aswed.space/aswed/aswed/eth/tracers/internal/tracers"
+	"github.com/aswedchain/aswed/eth/tracers/internal/tracers"
 )
 
 // all contains all the built in JavaScript tracers by name.

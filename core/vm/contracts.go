@@ -22,13 +22,13 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/crypto/blake2b"
-	"aswed.space/aswed/aswed/crypto/bls12381"
-	"aswed.space/aswed/aswed/crypto/bn256"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/crypto/blake2b"
+	"github.com/aswedchain/aswed/crypto/bls12381"
+	"github.com/aswedchain/aswed/crypto/bn256"
+	"github.com/aswedchain/aswed/params"
 
 	//lint:ignore SA1019 Needed for precompile
 	"golang.org/x/crypto/ripemd160"

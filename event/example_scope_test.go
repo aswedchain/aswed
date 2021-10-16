@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sync"
 
-	"aswed.space/aswed/aswed/event"
+	"github.com/aswedchain/aswed/event"
 )
 
 // This example demonstrates how SubscriptionScope can be used to control the lifetime of

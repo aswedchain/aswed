@@ -21,7 +21,7 @@ import (
 	"sync"
 	"testing"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // Handler returns a log handler which logs to the unit test log of t.

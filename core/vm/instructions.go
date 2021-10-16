@@ -17,9 +17,9 @@
 package vm
 
 import (
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
 	"github.com/holiman/uint256"
 	"golang.org/x/crypto/sha3"
 )

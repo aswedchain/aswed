@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
 )
 
 func filledStateDB() *StateDB {

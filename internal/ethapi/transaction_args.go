@@ -23,12 +23,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // TransactionArgs represents the arguments to construct a new transaction
@@ -45,7 +45,7 @@ type TransactionArgs struct {
 
 	// We accept "data" and "input" for backwards-compatibility reasons.
 	// "input" is the newer name and should be preferred by clients.
-	// Issue detail: https://aswed.space/aswed/aswed/issues/15628
+	// Issue detail: https://github.com/aswedchain/aswed/issues/15628
 	Data  *hexutil.Bytes `json:"data"`
 	Input *hexutil.Bytes `json:"input"`
 

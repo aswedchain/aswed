@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"log"
 
-	"aswed.space/aswed/aswed/node"
+	"github.com/aswedchain/aswed/node"
 )
 
 // SampleLifecycle is a trivial network service that can be attached to a node for

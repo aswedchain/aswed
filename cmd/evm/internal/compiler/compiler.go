@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/core/asm"
+	"github.com/aswedchain/aswed/core/asm"
 )
 
 func Compile(fn string, src []byte, debug bool) (string, error) {

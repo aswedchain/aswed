@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 func decodeEncode(input []byte, val interface{}, i int) {

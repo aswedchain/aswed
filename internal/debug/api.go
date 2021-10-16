@@ -34,7 +34,7 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // Handler is the global debugging handler.

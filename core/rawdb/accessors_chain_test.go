@@ -27,10 +27,10 @@ import (
 	"reflect"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

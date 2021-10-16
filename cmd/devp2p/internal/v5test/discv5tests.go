@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/internal/utesting"
-	"aswed.space/aswed/aswed/p2p/discover/v5wire"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/netutil"
+	"github.com/aswedchain/aswed/internal/utesting"
+	"github.com/aswedchain/aswed/p2p/discover/v5wire"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/netutil"
 )
 
 // Suite is the discv5 test suite.

@@ -22,7 +22,7 @@ package geth
 import (
 	"errors"
 
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // Enode represents a host on the network.

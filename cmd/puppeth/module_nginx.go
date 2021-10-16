@@ -24,7 +24,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // nginxDockerfile is theis the Dockerfile required to build an nginx reverse-

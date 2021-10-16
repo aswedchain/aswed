@@ -24,9 +24,9 @@ import (
 	"testing"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // randomHash generates a random blob of data and returns it as a hash.

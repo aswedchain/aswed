@@ -17,9 +17,9 @@
 package snap
 
 import (
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p"
 )
 
 // Peer is a collection of relevant information we have about a `snap` peer.

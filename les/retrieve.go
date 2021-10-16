@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/light"
+	"github.com/aswedchain/aswed/light"
 )
 
 var (

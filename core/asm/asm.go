@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"aswed.space/aswed/aswed/core/vm"
+	"github.com/aswedchain/aswed/core/vm"
 )
 
 // Iterator for disassembled EVM instructions

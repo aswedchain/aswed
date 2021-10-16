@@ -25,9 +25,9 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/internal/testlog"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/internal/testlog"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rpc"
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"
 )

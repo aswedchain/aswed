@@ -21,17 +21,17 @@ import (
 	"fmt"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/light"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/light"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/trie"
 )
 
 const (

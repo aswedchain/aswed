@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sort"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // weightedIterator is a iterator with an assigned weight. It is used to prioritise

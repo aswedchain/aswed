@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/light"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/light"
 )
 
 func TestLightPruner(t *testing.T) {

@@ -22,9 +22,9 @@ import (
 	"encoding/binary"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/enode"
 	"github.com/hashicorp/golang-lru/simplelru"
 )
 

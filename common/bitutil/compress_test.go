@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/hexutil"
 )
 
 // Tests that data bitset encoding and decoding works and is bijective.

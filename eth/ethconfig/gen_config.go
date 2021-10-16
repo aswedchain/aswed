@@ -6,13 +6,13 @@ import (
 	"math/big"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/eth/downloader"
-	"aswed.space/aswed/aswed/eth/gasprice"
-	"aswed.space/aswed/aswed/miner"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/eth/downloader"
+	"github.com/aswedchain/aswed/eth/gasprice"
+	"github.com/aswedchain/aswed/miner"
+	"github.com/aswedchain/aswed/params"
 )
 
 // MarshalTOML marshals as TOML.

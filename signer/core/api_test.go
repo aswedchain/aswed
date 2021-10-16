@@ -27,17 +27,17 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/signer/core"
-	"aswed.space/aswed/aswed/signer/core/apitypes"
-	"aswed.space/aswed/aswed/signer/fourbyte"
-	"aswed.space/aswed/aswed/signer/storage"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/signer/core"
+	"github.com/aswedchain/aswed/signer/core/apitypes"
+	"github.com/aswedchain/aswed/signer/fourbyte"
+	"github.com/aswedchain/aswed/signer/storage"
 )
 
 //Used for testing

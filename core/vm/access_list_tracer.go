@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // accessList is an accumulator for the set of accounts and storage slots an EVM

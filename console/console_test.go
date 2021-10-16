@@ -26,15 +26,15 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/console/prompt"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/eth"
-	"aswed.space/aswed/aswed/eth/ethconfig"
-	"aswed.space/aswed/aswed/internal/jsre"
-	"aswed.space/aswed/aswed/miner"
-	"aswed.space/aswed/aswed/node"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/console/prompt"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/eth"
+	"github.com/aswedchain/aswed/eth/ethconfig"
+	"github.com/aswedchain/aswed/internal/jsre"
+	"github.com/aswedchain/aswed/miner"
+	"github.com/aswedchain/aswed/node"
 )
 
 const (

@@ -17,8 +17,8 @@
 package vm
 
 import (
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
 	"github.com/holiman/uint256"
 )
 

@@ -24,14 +24,14 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/trie"
 )
 
 var (

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 func TestUnmarshalJSONNewFilterArgs(t *testing.T) {

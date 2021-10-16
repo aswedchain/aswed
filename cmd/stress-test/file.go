@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 func writeAccounts(path string, accounts []*ecdsa.PrivateKey) error {

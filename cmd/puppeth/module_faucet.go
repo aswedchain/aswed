@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"strings"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/log"
 )
 
 // faucetDockerfile is the Dockerfile required to build a faucet container to

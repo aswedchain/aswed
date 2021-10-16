@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
 )
 
 var (

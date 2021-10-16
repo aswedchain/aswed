@@ -1,7 +1,7 @@
 package systemcontract
 
 import (
-	"aswed.space/aswed/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/accounts/abi"
 	"github.com/stretchr/testify/require"
 	"strings"
 	"testing"

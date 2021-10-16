@@ -23,9 +23,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/crypto"
 	"github.com/google/uuid"
 	"gopkg.in/urfave/cli.v1"
 )

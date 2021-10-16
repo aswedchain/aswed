@@ -19,8 +19,8 @@ package memorydb
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/ethdb/dbtest"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/ethdb/dbtest"
 )
 
 func TestMemoryDB(t *testing.T) {

@@ -20,12 +20,12 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // API is a user facing RPC API to allow controlling the signer and voting

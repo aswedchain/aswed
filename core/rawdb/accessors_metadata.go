@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // ReadDatabaseVersion retrieves the version number of the database.

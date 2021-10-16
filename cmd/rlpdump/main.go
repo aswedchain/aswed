@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 var (

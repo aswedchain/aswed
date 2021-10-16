@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 var (

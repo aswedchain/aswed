@@ -20,7 +20,7 @@ import (
 	"sort"
 	"sync"
 
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 const maxSelectionWeight = 1000000000 // maximum selection weight of each individual node/address group

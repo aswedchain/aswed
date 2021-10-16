@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
 )
 
 //go:generate gencodec -type DifficultyTest -field-override difficultyTestMarshaling -out gen_difficultytest.go

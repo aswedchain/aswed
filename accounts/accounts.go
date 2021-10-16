@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/event"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/event"
 	"golang.org/x/crypto/sha3"
 )
 

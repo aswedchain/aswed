@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // Account is a modified version of a state.Account, where the root is replaced

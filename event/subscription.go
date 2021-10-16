@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/mclock"
 )
 
 // Subscription represents a stream of events. The carrier of the events is typically a

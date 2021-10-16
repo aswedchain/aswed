@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"testing"
 
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/p2p"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/p2p"
 	"github.com/stretchr/testify/assert"
 )
 

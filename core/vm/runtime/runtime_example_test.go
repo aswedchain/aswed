@@ -19,8 +19,8 @@ package runtime_test
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/vm/runtime"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/vm/runtime"
 )
 
 func ExampleExecute() {

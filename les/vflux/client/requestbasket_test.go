@@ -20,7 +20,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"aswed.space/aswed/aswed/les/utils"
+	"github.com/aswedchain/aswed/les/utils"
 )
 
 func checkU64(t *testing.T, name string, value, exp uint64) {

@@ -19,8 +19,8 @@
 package geth
 
 import (
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

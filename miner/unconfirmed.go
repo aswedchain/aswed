@@ -20,9 +20,9 @@ import (
 	"container/ring"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/log"
 )
 
 // chainRetriever is used by the unconfirmed block set to verify whether a previously

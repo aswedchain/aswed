@@ -26,12 +26,12 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/signer/core"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/signer/core"
 )
 
 var typesStandard = core.Types{

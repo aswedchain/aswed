@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"aswed.space/aswed/aswed/cmd/evm/internal/compiler"
+	"github.com/aswedchain/aswed/cmd/evm/internal/compiler"
 
 	"gopkg.in/urfave/cli.v1"
 )

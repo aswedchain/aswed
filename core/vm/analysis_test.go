@@ -19,7 +19,7 @@ package vm
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 func TestJumpDestAnalysis(t *testing.T) {

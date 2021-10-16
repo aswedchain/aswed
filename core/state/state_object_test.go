@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 func BenchmarkCutOriginal(b *testing.B) {

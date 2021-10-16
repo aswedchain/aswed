@@ -16,7 +16,7 @@
 
 package downloader
 
-import "aswed.space/aswed/aswed/core/types"
+import "github.com/aswedchain/aswed/core/types"
 
 type DoneEvent struct {
 	Latest *types.Header

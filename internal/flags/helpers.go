@@ -20,7 +20,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

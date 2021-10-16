@@ -19,9 +19,9 @@ package main
 import (
 	"os"
 
-	"aswed.space/aswed/aswed/cmd/devp2p/internal/v4test"
-	"aswed.space/aswed/aswed/internal/utesting"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/cmd/devp2p/internal/v4test"
+	"github.com/aswedchain/aswed/internal/utesting"
+	"github.com/aswedchain/aswed/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

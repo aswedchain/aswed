@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // verifyImportEvent verifies that one single event arrive on an import channel.

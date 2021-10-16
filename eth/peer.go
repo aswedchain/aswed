@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/eth/protocols/snap"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/eth/protocols/snap"
 )
 
 // ethPeerInfo represents a short summary of the `eth` sub-protocol metadata known

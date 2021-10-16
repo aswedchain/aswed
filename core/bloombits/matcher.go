@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/common/bitutil"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common/bitutil"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 // bloomIndexes represents the bit indexes inside the bloom filter that belong

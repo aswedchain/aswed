@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // Tests that batched bloom bits are correctly rotated from the input bloom

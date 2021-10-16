@@ -22,8 +22,8 @@ import (
 	"strings"
 
 	"github.com/cloudflare/cloudflare-go"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/dnsdisc"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/dnsdisc"
 	"gopkg.in/urfave/cli.v1"
 )
 

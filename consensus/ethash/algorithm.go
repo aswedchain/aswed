@@ -27,10 +27,10 @@ import (
 	"time"
 	"unsafe"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/bitutil"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/bitutil"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
 	"golang.org/x/crypto/sha3"
 )
 

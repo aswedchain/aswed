@@ -29,8 +29,8 @@ import (
 
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/common"
 )
 
 var (

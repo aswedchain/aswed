@@ -25,8 +25,8 @@ import (
 	"sort"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 const jsonIndent = "    "

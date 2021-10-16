@@ -24,11 +24,11 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
 	"github.com/holiman/uint256"
 )
 

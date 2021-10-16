@@ -20,9 +20,9 @@ import (
 	"math/rand"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
 )
 
 // Tests that given a database with random data content, all parts of a snapshot

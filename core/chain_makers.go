@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/consensus/misc"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/consensus/misc"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/params"
 )
 
 // BlockGen creates blocks for testing.

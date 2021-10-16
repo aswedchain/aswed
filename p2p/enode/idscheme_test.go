@@ -23,9 +23,9 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

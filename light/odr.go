@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/ethdb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/ethdb"
 )
 
 // NoOdr is the default context passed to an ODR capable function when the ODR

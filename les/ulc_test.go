@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 func TestULCAnnounceThresholdLes2(t *testing.T) { testULCAnnounceThreshold(t, 2) }

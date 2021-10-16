@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strings"
 
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/common"
 )
 
 // decodedCallData is an internal type to represent a method call parsed according

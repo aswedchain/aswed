@@ -28,10 +28,10 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/rpc"
 
 	"github.com/stretchr/testify/assert"
 )

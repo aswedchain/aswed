@@ -25,7 +25,7 @@ import (
 	"strings"
 	"text/template"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // ethstatsDockerfile is the Dockerfile required to build an ethstats backend

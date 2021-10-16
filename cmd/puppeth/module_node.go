@@ -26,8 +26,8 @@ import (
 	"strings"
 	"text/template"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/log"
 )
 
 // nodeDockerfile is the Dockerfile required to run an Ethereum node.

@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/params"
 	"github.com/holiman/uint256"
 )
 

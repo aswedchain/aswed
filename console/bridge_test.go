@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/dop251/goja"
-	"aswed.space/aswed/aswed/internal/jsre"
+	"github.com/aswedchain/aswed/internal/jsre"
 )
 
 // TestUndefinedAsParam ensures that personal functions can receive

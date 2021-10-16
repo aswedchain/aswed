@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/asm"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/asm"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/params"
 )
 
 func TestDefaults(t *testing.T) {
@@ -611,7 +611,7 @@ func TestEip2929Cases(t *testing.T) {
 
 // TestColdAccountAccessCost test that the cold account access cost is reported
 // correctly
-// see: https://aswed.space/aswed/aswed/issues/22649
+// see: https://github.com/aswedchain/aswed/issues/22649
 func TestColdAccountAccessCost(t *testing.T) {
 	for i, tc := range []struct {
 		code []byte

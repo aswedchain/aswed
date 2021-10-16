@@ -24,11 +24,11 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 // SignerUIAPI implements methods Clef provides for a UI to query, in the bidirectional communication

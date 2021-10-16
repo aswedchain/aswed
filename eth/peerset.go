@@ -21,10 +21,10 @@ import (
 	"math/big"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/eth/protocols/snap"
-	"aswed.space/aswed/aswed/p2p"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/eth/protocols/snap"
+	"github.com/aswedchain/aswed/p2p"
 )
 
 var (

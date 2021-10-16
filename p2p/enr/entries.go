@@ -21,7 +21,7 @@ import (
 	"io"
 	"net"
 
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // Entry is implemented by known node record entry types.

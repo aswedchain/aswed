@@ -19,10 +19,10 @@ package simulations
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // NoopService is the service that does not do anything

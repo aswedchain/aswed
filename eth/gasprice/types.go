@@ -1,6 +1,6 @@
 package gasprice
 
-import "aswed.space/aswed/aswed/core/types"
+import "github.com/aswedchain/aswed/core/types"
 
 // TxByPrice sorts the txs descending by price
 type TxByPrice types.Transactions

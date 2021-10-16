@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts/abi/bind"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/light"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/accounts/abi/bind"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/light"
+	"github.com/aswedchain/aswed/params"
 )
 
 // Test light syncing which will download all headers from genesis.
@@ -196,7 +196,7 @@ func testMissOracleBackend(t *testing.T, hasCheckpoint bool, protocol int) {
 	// that user wants to unlock something which blocks the oracle backend
 	// initialisation. But at the same time syncing starts.
 	//
-	// See https://aswed.space/aswed/aswed/issues/20097 for more detail.
+	// See https://github.com/aswedchain/aswed/issues/20097 for more detail.
 	//
 	// In this case, client should run light sync or legacy checkpoint sync
 	// if hardcoded checkpoint is configured.

@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/params"
 )
 
 // Tests a recovery for a short canonical chain where a recent block was already

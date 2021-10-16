@@ -21,8 +21,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/common/prque"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/prque"
 )
 
 // servingQueue allows running tasks in a limited number of threads and puts the

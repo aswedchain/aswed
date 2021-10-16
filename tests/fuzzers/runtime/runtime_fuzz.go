@@ -17,7 +17,7 @@
 package runtime
 
 import (
-	"aswed.space/aswed/aswed/core/vm/runtime"
+	"github.com/aswedchain/aswed/core/vm/runtime"
 )
 
 // Fuzz is the basic entry point for the go-fuzz tool

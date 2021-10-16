@@ -25,12 +25,12 @@ import (
 	"time"
 	"unsafe"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
 	"gopkg.in/olebedev/go-duktape.v3"
 )
 

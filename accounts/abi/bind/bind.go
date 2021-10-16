@@ -17,7 +17,7 @@
 // Package bind generates Ethereum contract Go bindings.
 //
 // Detailed usage document and tutorial available on the go-ethereum Wiki page:
-// https://aswed.space/aswed/aswed/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
+// https://github.com/aswedchain/aswed/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
 package bind
 
 import (
@@ -30,8 +30,8 @@ import (
 	"text/template"
 	"unicode"
 
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/log"
 )
 
 // Lang is a target programming language selector to generate bindings for.

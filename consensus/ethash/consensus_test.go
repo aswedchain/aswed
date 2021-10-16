@@ -25,10 +25,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
 )
 
 type diffTest struct {

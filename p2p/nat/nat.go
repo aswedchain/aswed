@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 	natpmp "github.com/jackpal/go-nat-pmp"
 )
 

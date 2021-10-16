@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/eth/downloader"
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/eth/downloader"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // Tests that fast sync is disabled after a successful sync cycle.

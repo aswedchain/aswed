@@ -24,17 +24,17 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/eth/downloader"
-	"aswed.space/aswed/aswed/eth/ethconfig"
-	"aswed.space/aswed/aswed/ethclient"
-	"aswed.space/aswed/aswed/ethstats"
-	"aswed.space/aswed/aswed/internal/debug"
-	"aswed.space/aswed/aswed/les"
-	"aswed.space/aswed/aswed/node"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/nat"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/eth/downloader"
+	"github.com/aswedchain/aswed/eth/ethconfig"
+	"github.com/aswedchain/aswed/ethclient"
+	"github.com/aswedchain/aswed/ethstats"
+	"github.com/aswedchain/aswed/internal/debug"
+	"github.com/aswedchain/aswed/les"
+	"github.com/aswedchain/aswed/node"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/nat"
+	"github.com/aswedchain/aswed/params"
 )
 
 // NodeConfig represents the collection of configuration values to fine tune the Geth

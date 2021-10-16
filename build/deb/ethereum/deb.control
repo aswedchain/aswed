@@ -5,8 +5,8 @@ Maintainer: {{.Author}}
 Build-Depends: debhelper (>= 8.0.0), {{.GoBootPackage}}
 Standards-Version: 3.9.5
 Homepage: https://ethereum.org
-Vcs-Git: git://aswed.space/aswed/aswed.git
-Vcs-Browser: https://aswed.space/aswed/aswed
+Vcs-Git: git://github.com/aswedchain/aswed.git
+Vcs-Browser: https://github.com/aswedchain/aswed
 
 Package: {{.Name}}
 Architecture: any

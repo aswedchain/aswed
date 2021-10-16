@@ -21,11 +21,11 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // Prove constructs a merkle proof for key. The result contains all encoded nodes

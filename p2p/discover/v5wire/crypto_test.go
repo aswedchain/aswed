@@ -25,9 +25,9 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 func TestVector_ECDH(t *testing.T) {

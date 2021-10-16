@@ -19,9 +19,9 @@ package rawdb
 import (
 	"encoding/binary"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/log"
 )
 
 // ReadSnapshotDisabled retrieves if the snapshot maintenance is disabled.

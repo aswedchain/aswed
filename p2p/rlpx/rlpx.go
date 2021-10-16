@@ -34,9 +34,9 @@ import (
 	"net"
 	"time"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/crypto/ecies"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/crypto/ecies"
+	"github.com/aswedchain/aswed/rlp"
 	"github.com/golang/snappy"
 	"golang.org/x/crypto/sha3"
 )

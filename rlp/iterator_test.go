@@ -19,7 +19,7 @@ package rlp
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/hexutil"
 )
 
 // TestIterator tests some basic things about the ListIterator. A more

@@ -22,10 +22,10 @@ import (
 	"sync"
 
 	mapset "github.com/deckarep/golang-set"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 const (

@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
 )
 
 // copyConfig does a _shallow_ copy of a given config. Safe to set new values, but

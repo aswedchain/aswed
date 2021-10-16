@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // deployDashboard queries the user for various input on deploying a web-service

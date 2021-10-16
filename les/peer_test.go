@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/params"
 )
 
 type testServerPeerSub struct {

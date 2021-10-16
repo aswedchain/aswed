@@ -7,12 +7,12 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/accounts/abi/bind"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/event"
+	ethereum "github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/accounts/abi/bind"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

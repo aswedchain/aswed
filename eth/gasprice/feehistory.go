@@ -26,11 +26,11 @@ import (
 	"sort"
 	"sync/atomic"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus/misc"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus/misc"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 var (

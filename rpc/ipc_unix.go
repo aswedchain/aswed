@@ -25,7 +25,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // ipcListen will create a Unix socket on the given endpoint.

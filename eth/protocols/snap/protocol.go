@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/state/snapshot"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/state/snapshot"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // Constants to match up protocol versions and messages

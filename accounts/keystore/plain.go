@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 type keyStorePlain struct {

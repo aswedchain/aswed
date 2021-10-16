@@ -29,8 +29,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rpc"
 	"github.com/rs/cors"
 )
 

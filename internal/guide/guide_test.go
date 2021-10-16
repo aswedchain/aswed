@@ -30,9 +30,9 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // Tests that the account management snippets work correctly.

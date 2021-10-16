@@ -24,13 +24,13 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/external"
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/external"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
 )
 
 // ErrNoChainID is returned whenever the user failed to specify a chain id.

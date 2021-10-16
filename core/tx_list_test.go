@@ -21,8 +21,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 // Tests that transactions can be added to strict lists and list contents and

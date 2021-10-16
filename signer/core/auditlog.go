@@ -20,11 +20,11 @@ import (
 	"context"
 	"encoding/json"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/signer/core/apitypes"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/signer/core/apitypes"
 )
 
 type AuditLogger struct {

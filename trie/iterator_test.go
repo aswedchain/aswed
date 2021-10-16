@@ -23,10 +23,10 @@ import (
 	"math/rand"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
 )
 
 func TestIterator(t *testing.T) {

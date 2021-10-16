@@ -1,9 +1,9 @@
 package systemcontract
 
 import (
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/params"
 	"math/big"
 	"strings"
 )

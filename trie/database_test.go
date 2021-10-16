@@ -19,8 +19,8 @@ package trie
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
 )
 
 // Tests that the trie database returns a missing trie node error if attempting

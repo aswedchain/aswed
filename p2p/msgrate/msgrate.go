@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // measurementImpact is the impact a single measurement has on a peer's final

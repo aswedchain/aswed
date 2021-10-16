@@ -25,12 +25,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts/abi/bind"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/contracts/checkpointoracle"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/accounts/abi/bind"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/contracts/checkpointoracle"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
 )
 
 // CheckpointOracle is responsible for offering the latest stable checkpoint

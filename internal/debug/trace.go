@@ -23,7 +23,7 @@ import (
 	"os"
 	"runtime/trace"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // StartGoTrace turns on tracing, writing to the given file.

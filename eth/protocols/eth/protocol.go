@@ -22,10 +22,10 @@ import (
 	"io"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // Constants to match up protocol versions and messages

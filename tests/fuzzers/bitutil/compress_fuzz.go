@@ -19,7 +19,7 @@ package bitutil
 import (
 	"bytes"
 
-	"aswed.space/aswed/aswed/common/bitutil"
+	"github.com/aswedchain/aswed/common/bitutil"
 )
 
 // Fuzz implements a go-fuzz fuzzer method to test various encoding method

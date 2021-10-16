@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "aswed.space/aswed/aswed/crypto"
+	ethcrypto "github.com/aswedchain/aswed/crypto"
 )
 
 var (

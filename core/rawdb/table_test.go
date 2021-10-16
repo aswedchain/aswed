@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"aswed.space/aswed/aswed/ethdb"
+	"github.com/aswedchain/aswed/ethdb"
 )
 
 func TestTableDatabase(t *testing.T)            { testTableDatabase(t, "prefix") }

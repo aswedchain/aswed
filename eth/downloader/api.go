@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

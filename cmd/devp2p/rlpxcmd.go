@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"net"
 
-	"aswed.space/aswed/aswed/cmd/devp2p/internal/ethtest"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/internal/utesting"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/rlpx"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/cmd/devp2p/internal/ethtest"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/internal/utesting"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/rlpx"
+	"github.com/aswedchain/aswed/rlp"
 	"gopkg.in/urfave/cli.v1"
 )
 

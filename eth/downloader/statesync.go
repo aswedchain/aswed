@@ -21,13 +21,13 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/trie"
 	"golang.org/x/crypto/sha3"
 )
 

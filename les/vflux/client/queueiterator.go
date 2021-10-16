@@ -19,8 +19,8 @@ package client
 import (
 	"sync"
 
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/nodestate"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/nodestate"
 )
 
 // QueueIterator returns nodes from the specified selectable set in the same order as

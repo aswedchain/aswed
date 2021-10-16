@@ -23,10 +23,10 @@ import (
 	"math/rand"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/eth/fetcher"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/eth/fetcher"
 )
 
 var (

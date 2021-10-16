@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/hexutil"
 	"github.com/stretchr/testify/assert"
 )
 

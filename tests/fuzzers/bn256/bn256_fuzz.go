@@ -13,8 +13,8 @@ import (
 	"math/big"
 
 	"github.com/consensys/gnark-crypto/ecc/bn254"
-	cloudflare "aswed.space/aswed/aswed/crypto/bn256/cloudflare"
-	google "aswed.space/aswed/aswed/crypto/bn256/google"
+	cloudflare "github.com/aswedchain/aswed/crypto/bn256/cloudflare"
+	google "github.com/aswedchain/aswed/crypto/bn256/google"
 )
 
 func getG1Points(input io.Reader) (*cloudflare.G1, *google.G1, *bn254.G1Affine) {

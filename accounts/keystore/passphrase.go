@@ -38,10 +38,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/crypto"
 	"github.com/google/uuid"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"
@@ -121,7 +121,7 @@ func (ks keyStorePassphrase) StoreKey(filename string, key *Key, auth string) er
 				"This indicates that the keystore is corrupted. \n" +
 				"The corrupted file is stored at \n%v\n" +
 				"Please file a ticket at:\n\n" +
-				"https://aswed.space/aswed/aswed/issues." +
+				"https://github.com/aswedchain/aswed/issues." +
 				"The error was : %s"
 			//lint:ignore ST1005 This is a message for the user
 			return fmt.Errorf(msg, tmpName, err)

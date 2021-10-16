@@ -30,9 +30,9 @@ import (
 	"math/big"
 	"os"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

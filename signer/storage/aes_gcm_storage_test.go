@@ -23,8 +23,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/log"
 	"github.com/mattn/go-colorable"
 )
 

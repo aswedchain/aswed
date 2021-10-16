@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
 )
 
 var (

@@ -23,8 +23,8 @@ import (
 	"io"
 	"math/big"
 
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 type fuzzer struct {

@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
 )
 
 var _ = (*assembleBlockParamsMarshaling)(nil)

@@ -25,11 +25,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/console/prompt"
-	"aswed.space/aswed/aswed/p2p/dnsdisc"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/console/prompt"
+	"github.com/aswedchain/aswed/p2p/dnsdisc"
+	"github.com/aswedchain/aswed/p2p/enode"
 	"gopkg.in/urfave/cli.v1"
 )
 

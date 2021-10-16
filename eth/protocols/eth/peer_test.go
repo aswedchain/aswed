@@ -22,8 +22,8 @@ package eth
 import (
 	"crypto/rand"
 
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // testPeer is a simulated peer to allow testing direct network calls.

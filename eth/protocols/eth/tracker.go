@@ -19,7 +19,7 @@ package eth
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/p2p/tracker"
+	"github.com/aswedchain/aswed/p2p/tracker"
 )
 
 // requestTracker is a singleton tracker for eth/66 and newer request times.

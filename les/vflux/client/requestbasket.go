@@ -19,8 +19,8 @@ package client
 import (
 	"io"
 
-	"aswed.space/aswed/aswed/les/utils"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/les/utils"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 const basketFactor = 1000000 // reference basket amount and value scale factor

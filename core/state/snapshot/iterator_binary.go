@@ -19,7 +19,7 @@ package snapshot
 import (
 	"bytes"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // binaryIterator is a simplistic iterator to step over the accounts or storage

@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/hexutil"
 )
 
 type MyType [5]byte

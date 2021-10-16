@@ -21,7 +21,7 @@ package geth
 import (
 	"errors"
 
-	"aswed.space/aswed/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p"
 )
 
 // NodeInfo represents pi short summary of the information known about the host.

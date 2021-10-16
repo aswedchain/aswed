@@ -19,8 +19,8 @@ package trie
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/log"
 )
 
 // SecureTrie wraps a trie with key hashing. In a secure trie, all

@@ -19,7 +19,7 @@ package main
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 func TestFacebook(t *testing.T) {

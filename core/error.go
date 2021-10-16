@@ -19,7 +19,7 @@ package core
 import (
 	"errors"
 
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 var (

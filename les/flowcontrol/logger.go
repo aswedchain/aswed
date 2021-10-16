@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/mclock"
 )
 
 // logger collects events in string format and discards events older than the

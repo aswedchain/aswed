@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 // Event is an event potentially triggered by the EVM's LOG mechanism. The Event

@@ -20,8 +20,8 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // senderFromServer is a types.Signer that remembers the sender address returned by the RPC

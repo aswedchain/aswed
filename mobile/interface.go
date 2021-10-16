@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // Interface represents a wrapped version of Go's interface{}, with the capacity

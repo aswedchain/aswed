@@ -23,10 +23,10 @@ import (
 	"math/big"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 var emptyCodeHash = crypto.Keccak256(nil)

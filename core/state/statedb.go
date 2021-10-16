@@ -24,15 +24,15 @@ import (
 	"sort"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/state/snapshot"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/state/snapshot"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/trie"
 )
 
 type revision struct {
@@ -675,7 +675,7 @@ func (s *StateDB) Copy() *StateDB {
 	}
 	// Copy the dirty states, logs, and preimages
 	for addr := range s.journal.dirties {
-		// As documented [here](https://aswed.space/aswed/aswed/pull/16485#issuecomment-380438527),
+		// As documented [here](https://github.com/aswedchain/aswed/pull/16485#issuecomment-380438527),
 		// and in the Finalise-method, there is a case where an object is in the journal but not
 		// in the stateObjects: OOG after touch on ripeMD prior to Byzantium. Thus, we need to check for
 		// nil

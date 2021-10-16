@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"aswed.space/aswed/aswed/tests/fuzzers/rangeproof"
+	"github.com/aswedchain/aswed/tests/fuzzers/rangeproof"
 )
 
 func main() {

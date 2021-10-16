@@ -25,10 +25,10 @@ import (
 	"io"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 var ErrCommitDisabled = errors.New("no database for committing")

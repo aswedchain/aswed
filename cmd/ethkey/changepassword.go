@@ -21,8 +21,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

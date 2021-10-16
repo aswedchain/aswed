@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/common/prque"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/prque"
 )
 
 // cmNodeFields are ClientNode fields used by the client manager

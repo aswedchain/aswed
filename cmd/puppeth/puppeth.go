@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

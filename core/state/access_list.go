@@ -17,7 +17,7 @@
 package state
 
 import (
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 type accessList struct {

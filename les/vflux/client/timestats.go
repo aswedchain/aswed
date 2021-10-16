@@ -21,8 +21,8 @@ import (
 	"math"
 	"time"
 
-	"aswed.space/aswed/aswed/les/utils"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/les/utils"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 const (

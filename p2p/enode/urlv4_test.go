@@ -24,8 +24,8 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/enr"
 )
 
 func init() {

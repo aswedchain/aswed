@@ -28,13 +28,13 @@ import (
 	"io"
 	"math/big"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // ledgerOpcode is an enumeration encoding the supported Ledger opcodes.

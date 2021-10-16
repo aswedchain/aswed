@@ -7,10 +7,10 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/params"
 )
 
 var _ = (*genesisSpecMarshaling)(nil)

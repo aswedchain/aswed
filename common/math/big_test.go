@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 func TestHexOrDecimal256(t *testing.T) {

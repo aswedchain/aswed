@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/simulations/adapters"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/simulations/adapters"
 )
 
 //a map of mocker names to its function

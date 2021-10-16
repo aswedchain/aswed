@@ -23,10 +23,10 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/accounts/abi/bind"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/contracts/checkpointoracle/contract"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/accounts/abi/bind"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/contracts/checkpointoracle/contract"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // CheckpointOracle is a Go wrapper around an on-chain checkpoint oracle contract.

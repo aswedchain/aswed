@@ -16,7 +16,7 @@
 
 package core
 
-import "aswed.space/aswed/aswed/common"
+import "github.com/aswedchain/aswed/common"
 
 // BadHashes represent a set of manually tracked bad hashes (usually hard forks)
 var BadHashes = map[common.Hash]bool{

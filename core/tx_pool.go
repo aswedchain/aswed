@@ -24,15 +24,15 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/prque"
-	"aswed.space/aswed/aswed/consensus/misc"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/prque"
+	"github.com/aswedchain/aswed/consensus/misc"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/params"
 )
 
 const (

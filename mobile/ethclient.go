@@ -21,8 +21,8 @@ package geth
 import (
 	"math/big"
 
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/ethclient"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/ethclient"
 )
 
 // EthereumClient provides access to the Ethereum APIs.

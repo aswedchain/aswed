@@ -21,11 +21,11 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/light"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/light"
 )
 
 // stateAtBlock retrieves the state database associated with a certain block.

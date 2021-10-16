@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -23,8 +23,8 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // EIP-8 test vectors.

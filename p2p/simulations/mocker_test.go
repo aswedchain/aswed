@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 func TestMocker(t *testing.T) {

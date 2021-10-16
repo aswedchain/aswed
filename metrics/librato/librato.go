@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"time"
 
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 // a regexp for extracting the unit from time.Duration.String

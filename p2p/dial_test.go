@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/internal/testlog"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/netutil"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/internal/testlog"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/netutil"
 )
 
 // This test checks that dynamic dials are launched from discovery results.

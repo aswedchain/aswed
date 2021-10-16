@@ -28,7 +28,7 @@ import (
 	"reflect"
 	"strings"
 
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/hexutil"
 	"golang.org/x/crypto/sha3"
 )
 

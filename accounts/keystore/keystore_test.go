@@ -28,10 +28,10 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/event"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/event"
 )
 
 var testSigData = make([]byte, 32)

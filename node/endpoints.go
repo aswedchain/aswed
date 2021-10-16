@@ -21,8 +21,8 @@ import (
 	"net/http"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // StartHTTPEndpoint starts the HTTP RPC endpoint.

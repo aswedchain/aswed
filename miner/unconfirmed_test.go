@@ -19,7 +19,7 @@ package miner
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // noopChainRetriever is an implementation of headerRetriever that always

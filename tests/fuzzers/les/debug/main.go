@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"aswed.space/aswed/aswed/tests/fuzzers/les"
+	"github.com/aswedchain/aswed/tests/fuzzers/les"
 )
 
 func main() {

@@ -26,10 +26,10 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/internal/testlog"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/internal/testlog"
+	"github.com/aswedchain/aswed/log"
 )
 
 // Tests whether remote HTTP servers are correctly notified of new work.

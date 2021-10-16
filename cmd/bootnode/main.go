@@ -24,13 +24,13 @@ import (
 	"net"
 	"os"
 
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/discover"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/nat"
-	"aswed.space/aswed/aswed/p2p/netutil"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/discover"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/nat"
+	"github.com/aswedchain/aswed/p2p/netutil"
 )
 
 func main() {

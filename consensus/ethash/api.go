@@ -19,9 +19,9 @@ package ethash
 import (
 	"errors"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 var errEthashStopped = errors.New("ethash stopped")

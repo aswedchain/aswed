@@ -25,8 +25,8 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/crypto"
 	"github.com/google/uuid"
 	"golang.org/x/crypto/pbkdf2"
 )

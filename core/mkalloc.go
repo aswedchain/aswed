@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strconv"
 
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 type allocItem struct {

@@ -21,15 +21,15 @@ import (
 	"math/big"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/trie"
 )
 
 const (

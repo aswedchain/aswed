@@ -34,10 +34,10 @@ import (
 	"unsafe"
 
 	"github.com/edsrzf/mmap-go"
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/rpc"
 	"github.com/hashicorp/golang-lru/simplelru"
 )
 

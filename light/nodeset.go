@@ -20,10 +20,10 @@ import (
 	"errors"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // NodeSet stores a set of trie nodes. It implements trie.Database and can also

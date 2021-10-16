@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"aswed.space/aswed/aswed/internal/flags"
+	"github.com/aswedchain/aswed/internal/flags"
 	"gopkg.in/urfave/cli.v1"
 )
 

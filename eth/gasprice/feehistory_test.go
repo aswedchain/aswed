@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 func TestFeeHistory(t *testing.T) {

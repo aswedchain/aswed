@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/bitutil"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/p2p/rlpx"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/bitutil"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/p2p/rlpx"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 const (

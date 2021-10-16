@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

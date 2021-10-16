@@ -17,7 +17,7 @@
 package snap
 
 import (
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // enrEntry is the ENR entry which advertises `snap` protocol on the discovery.

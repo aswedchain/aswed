@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // Type enumerator

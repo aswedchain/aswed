@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // TestPack tests the general pack/unpack tests in packing_test.go

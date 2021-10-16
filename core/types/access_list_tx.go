@@ -19,7 +19,7 @@ package types
 import (
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 //go:generate gencodec -type AccessTuple -out gen_access_tuple.go

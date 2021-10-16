@@ -21,9 +21,9 @@ import (
 	"container/heap"
 	"errors"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // Iterator is a key-value trie iterator that traverses a Trie.

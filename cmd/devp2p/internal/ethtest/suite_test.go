@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/eth"
-	"aswed.space/aswed/aswed/eth/ethconfig"
-	"aswed.space/aswed/aswed/internal/utesting"
-	"aswed.space/aswed/aswed/node"
-	"aswed.space/aswed/aswed/p2p"
+	"github.com/aswedchain/aswed/eth"
+	"github.com/aswedchain/aswed/eth/ethconfig"
+	"github.com/aswedchain/aswed/internal/utesting"
+	"github.com/aswedchain/aswed/node"
+	"github.com/aswedchain/aswed/p2p"
 )
 
 var (

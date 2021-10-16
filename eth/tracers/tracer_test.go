@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/params"
 )
 
 type account struct{}

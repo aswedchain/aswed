@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/simulations/adapters"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/simulations/adapters"
+	"github.com/aswedchain/aswed/rpc"
 	"github.com/gorilla/websocket"
 	"github.com/julienschmidt/httprouter"
 )

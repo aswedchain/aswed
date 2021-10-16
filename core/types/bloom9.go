@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 type bytesBacked interface {

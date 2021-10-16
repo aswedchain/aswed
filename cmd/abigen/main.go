@@ -25,13 +25,13 @@ import (
 	"regexp"
 	"strings"
 
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/accounts/abi/bind"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/common/compiler"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/internal/flags"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/accounts/abi/bind"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/common/compiler"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/internal/flags"
+	"github.com/aswedchain/aswed/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

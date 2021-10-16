@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // handler handles JSON-RPC messages. There is one handler per connection. Note that

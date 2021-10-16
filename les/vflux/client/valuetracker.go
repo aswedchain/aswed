@@ -23,12 +23,12 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/les/utils"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/les/utils"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 const (

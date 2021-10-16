@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"aswed.space/aswed/aswed/eth/ethconfig"
-	"aswed.space/aswed/aswed/node"
+	"github.com/aswedchain/aswed/eth/ethconfig"
+	"github.com/aswedchain/aswed/node"
 	"gopkg.in/urfave/cli.v1"
 )
 

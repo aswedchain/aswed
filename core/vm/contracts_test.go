@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

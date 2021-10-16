@@ -21,9 +21,9 @@ import (
 	"errors"
 	"os"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/log"
 	bloomfilter "github.com/holiman/bloomfilter/v2"
 )
 

@@ -45,12 +45,12 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/simulations"
-	"aswed.space/aswed/aswed/p2p/simulations/adapters"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/simulations"
+	"github.com/aswedchain/aswed/p2p/simulations/adapters"
+	"github.com/aswedchain/aswed/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

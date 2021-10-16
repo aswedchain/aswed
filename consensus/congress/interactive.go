@@ -1,9 +1,9 @@
 package congress
 
 import (
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 type chainContext struct {

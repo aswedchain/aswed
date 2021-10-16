@@ -19,12 +19,12 @@ package tests
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // TransactionTest checks RLP decoding and sender derivation of transactions.

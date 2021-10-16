@@ -22,9 +22,9 @@ import (
 	"io"
 	"sort"
 
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/internal/debug"
-	"aswed.space/aswed/aswed/internal/flags"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/internal/debug"
+	"github.com/aswedchain/aswed/internal/flags"
 	"gopkg.in/urfave/cli.v1"
 )
 

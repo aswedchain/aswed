@@ -19,11 +19,11 @@ package core
 import (
 	"sync/atomic"
 
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/params"
 )
 
 // statePrefetcher is a basic Prefetcher, which blindly executes a block on top

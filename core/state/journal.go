@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // journalEntry is a modification entry in the state change journal that can be

@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"os"
 
-	"aswed.space/aswed/aswed/common/fdlimit"
-	"aswed.space/aswed/aswed/internal/flags"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common/fdlimit"
+	"github.com/aswedchain/aswed/internal/flags"
+	"github.com/aswedchain/aswed/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

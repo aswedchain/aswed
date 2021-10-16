@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -21,8 +21,8 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
 )
 
 // txJSON is the JSON representation of transactions.

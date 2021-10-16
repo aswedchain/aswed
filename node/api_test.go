@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/rpc"
 	"github.com/stretchr/testify/assert"
 )
 

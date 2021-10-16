@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // deployExplorer creates a new block explorer based on some user input.

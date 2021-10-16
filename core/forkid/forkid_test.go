@@ -21,9 +21,9 @@ import (
 	"math"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // TestCreation tests that different genesis and fork rule combinations result in

@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/internal/testlog"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/p2p/rlpx"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/internal/testlog"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/p2p/rlpx"
 )
 
 type testTransport struct {

@@ -19,7 +19,7 @@ package netutil
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/mclock"
 )
 
 // IPTracker predicts the external endpoint, i.e. IP address and port, of the local host

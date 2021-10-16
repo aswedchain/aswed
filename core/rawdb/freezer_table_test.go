@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 func init() {

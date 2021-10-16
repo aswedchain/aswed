@@ -21,17 +21,17 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus/clique"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/eth/downloader"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus/clique"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/eth/downloader"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/trie"
 )
 
 type mockBackend struct {

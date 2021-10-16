@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // explorerDockerfile is the Dockerfile required to run a block explorer.

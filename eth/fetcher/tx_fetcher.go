@@ -24,12 +24,12 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 const (

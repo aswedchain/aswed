@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/node"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/node"
 	"github.com/graph-gophers/graphql-go"
 )
 

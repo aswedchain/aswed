@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/common/bitutil"
-	"aswed.space/aswed/aswed/light"
+	"github.com/aswedchain/aswed/common/bitutil"
+	"github.com/aswedchain/aswed/light"
 )
 
 const (

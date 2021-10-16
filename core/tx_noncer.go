@@ -19,8 +19,8 @@ package core
 import (
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/state"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/state"
 )
 
 // txNoncer is a tiny virtual state database to manage the executable nonces of

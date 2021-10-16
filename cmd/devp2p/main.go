@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"sort"
 
-	"aswed.space/aswed/aswed/internal/debug"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/internal/debug"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

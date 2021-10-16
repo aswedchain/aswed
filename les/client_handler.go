@@ -24,16 +24,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/eth/downloader"
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/light"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/eth/downloader"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/light"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/params"
 )
 
 // clientHandler is responsible for receiving and processing all incoming server

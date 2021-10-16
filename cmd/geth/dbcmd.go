@@ -24,14 +24,14 @@ import (
 	"strconv"
 	"time"
 
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/console/prompt"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/console/prompt"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/trie"
 	"gopkg.in/urfave/cli.v1"
 )
 

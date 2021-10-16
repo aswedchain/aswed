@@ -22,13 +22,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/bloombits"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/bloombits"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 const maxFilterBlockRange = 5000

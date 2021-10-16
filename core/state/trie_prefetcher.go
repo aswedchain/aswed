@@ -19,9 +19,9 @@ package state
 import (
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 var (

@@ -21,8 +21,8 @@ import (
 	"math/rand"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // This is the number of consecutive leaf requests that may fail before

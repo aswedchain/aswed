@@ -22,13 +22,13 @@ import (
 	"sort"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rpc"
 	lru "github.com/hashicorp/golang-lru"
 )
 

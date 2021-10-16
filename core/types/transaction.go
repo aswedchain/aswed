@@ -25,10 +25,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 var (

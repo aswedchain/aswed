@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

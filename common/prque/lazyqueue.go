@@ -20,7 +20,7 @@ import (
 	"container/heap"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/mclock"
 )
 
 // LazyQueue is a priority queue data structure where priorities can change over

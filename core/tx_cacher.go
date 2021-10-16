@@ -19,7 +19,7 @@ package core
 import (
 	"runtime"
 
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // senderCacher is a concurrent transaction sender recoverer and cacher.

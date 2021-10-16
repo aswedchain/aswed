@@ -23,11 +23,11 @@ import (
 	"strings"
 
 	"github.com/dop251/goja"
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/signer/core"
-	"aswed.space/aswed/aswed/signer/rules/deps"
-	"aswed.space/aswed/aswed/signer/storage"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/signer/core"
+	"github.com/aswedchain/aswed/signer/rules/deps"
+	"github.com/aswedchain/aswed/signer/storage"
 )
 
 var (

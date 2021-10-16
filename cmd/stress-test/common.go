@@ -8,14 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts/abi/bind"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/ethclient"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/accounts/abi/bind"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/ethclient"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

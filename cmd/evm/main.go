@@ -22,9 +22,9 @@ import (
 	"math/big"
 	"os"
 
-	"aswed.space/aswed/aswed/cmd/evm/internal/t8ntool"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/internal/flags"
+	"github.com/aswedchain/aswed/cmd/evm/internal/t8ntool"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/internal/flags"
 	"gopkg.in/urfave/cli.v1"
 )
 

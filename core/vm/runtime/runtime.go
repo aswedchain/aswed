@@ -21,12 +21,12 @@ import (
 	"math/big"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/params"
 )
 
 // Config is a basic type specifying certain configuration flags for running

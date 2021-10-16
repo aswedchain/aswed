@@ -20,10 +20,10 @@ import (
 	"errors"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // Tests that handshake failures are detected and reported correctly.

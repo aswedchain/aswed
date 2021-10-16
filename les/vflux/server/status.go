@@ -19,7 +19,7 @@ package server
 import (
 	"reflect"
 
-	"aswed.space/aswed/aswed/p2p/nodestate"
+	"github.com/aswedchain/aswed/p2p/nodestate"
 )
 
 type peerWrapper struct{ clientPeer } // the NodeStateMachine type system needs this wrapper

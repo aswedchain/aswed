@@ -23,9 +23,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/params"
 )
 
 // Genesis block for nodes which don't care about the DAO fork (i.e. not configured)

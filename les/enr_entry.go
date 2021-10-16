@@ -17,10 +17,10 @@
 package les
 
 import (
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/p2p/dnsdisc"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/p2p/dnsdisc"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // lesEntry is the "les" ENR entry. This is set for LES servers only.

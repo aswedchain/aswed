@@ -19,9 +19,9 @@ package core
 import (
 	"context"
 
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 type StdIOUI struct {

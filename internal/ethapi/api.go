@@ -26,27 +26,27 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/accounts/scwallet"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/consensus/clique"
-	"aswed.space/aswed/aswed/consensus/ethash"
-	"aswed.space/aswed/aswed/consensus/misc"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/accounts/scwallet"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/consensus/clique"
+	"github.com/aswedchain/aswed/consensus/ethash"
+	"github.com/aswedchain/aswed/consensus/misc"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/rpc"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/tyler-smith/go-bip39"
 )
@@ -561,7 +561,7 @@ func (s *PrivateAccountAPI) SignTransaction(ctx context.Context, args Transactio
 //
 // The key used to calculate the signature is decrypted with the given password.
 //
-// https://aswed.space/aswed/aswed/wiki/Management-APIs#personal_sign
+// https://github.com/aswedchain/aswed/wiki/Management-APIs#personal_sign
 func (s *PrivateAccountAPI) Sign(ctx context.Context, data hexutil.Bytes, addr common.Address, passwd string) (hexutil.Bytes, error) {
 	// Look up the wallet containing the requested signer
 	account := accounts.Account{Address: addr}
@@ -589,7 +589,7 @@ func (s *PrivateAccountAPI) Sign(ctx context.Context, data hexutil.Bytes, addr c
 // Note, the signature must conform to the secp256k1 curve R, S and V values, where
 // the V value must be 27 or 28 for legacy reasons.
 //
-// https://aswed.space/aswed/aswed/wiki/Management-APIs#personal_ecRecover
+// https://github.com/aswedchain/aswed/wiki/Management-APIs#personal_ecRecover
 func (s *PrivateAccountAPI) EcRecover(ctx context.Context, data, sig hexutil.Bytes) (common.Address, error) {
 	if len(sig) != crypto.SignatureLength {
 		return common.Address{}, fmt.Errorf("signature must be %d bytes long", crypto.SignatureLength)

@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/les/utils"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/les/utils"
 )
 
 // requestDistributor implements a mechanism that distributes requests to

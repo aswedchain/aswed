@@ -28,10 +28,10 @@ import (
 	"fmt"
 	"hash"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // TODO concurrent WHOAREYOU tie-breaker

@@ -19,10 +19,10 @@ package core
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/log"
 )
 
 // insertStats tracks and reports on block insertion.

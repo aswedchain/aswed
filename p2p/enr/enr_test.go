@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

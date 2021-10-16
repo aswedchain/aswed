@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 type gethrpc struct {

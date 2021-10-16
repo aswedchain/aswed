@@ -22,13 +22,13 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/bitutil"
-	"aswed.space/aswed/aswed/core/bloombits"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/node"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/bitutil"
+	"github.com/aswedchain/aswed/core/bloombits"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/node"
 )
 
 func BenchmarkBloomBits512(b *testing.B) {

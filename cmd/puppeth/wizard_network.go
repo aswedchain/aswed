@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // manageServers displays a list of servers the user can disconnect from, and an

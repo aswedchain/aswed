@@ -21,8 +21,8 @@ package geth
 import (
 	"errors"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/common"
 )
 
 // Subscription represents an event subscription where events are

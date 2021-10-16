@@ -1,6 +1,6 @@
 PROJECT_ROOT_DIR = ../..
-ENTRY_FILE_GETH_DIR = aswed.space/aswed/aswed/cmd/geth
-ENTRY_FILE_BOOTNODE_DIR = aswed.space/aswed/aswed/cmd/bootnode
+ENTRY_FILE_GETH_DIR = github.com/aswedchain/aswed/cmd/geth
+ENTRY_FILE_BOOTNODE_DIR = github.com/aswedchain/aswed/cmd/bootnode
 GROUP_NAME = huobichain.com
 SERVICE_NAME_BOOTNODE = bootnode
 SERVICE_NAME_MINER = miner

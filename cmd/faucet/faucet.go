@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/eth/downloader"
-	"aswed.space/aswed/aswed/eth/ethconfig"
-	"aswed.space/aswed/aswed/ethclient"
-	"aswed.space/aswed/aswed/ethstats"
-	"aswed.space/aswed/aswed/les"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/node"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/nat"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/eth/downloader"
+	"github.com/aswedchain/aswed/eth/ethconfig"
+	"github.com/aswedchain/aswed/ethclient"
+	"github.com/aswedchain/aswed/ethstats"
+	"github.com/aswedchain/aswed/les"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/node"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/nat"
+	"github.com/aswedchain/aswed/params"
 	"github.com/gorilla/websocket"
 )
 
@@ -469,7 +469,7 @@ func (f *faucet) apiHandler(w http.ResponseWriter, r *http.Request) {
 			id = username
 		default:
 			//lint:ignore ST1005 This error is to be displayed in the browser
-			err = errors.New("Something funky happened, please open an issue at https://aswed.space/aswed/aswed/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/aswedchain/aswed/issues")
 		}
 		if err != nil {
 			if err = sendError(wsconn, err); err != nil {

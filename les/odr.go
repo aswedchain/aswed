@@ -22,10 +22,10 @@ import (
 	"sort"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/light"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/light"
 )
 
 // LesOdr implements light.OdrBackend

@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"io"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 // The ABI holds information about a contract's context and available

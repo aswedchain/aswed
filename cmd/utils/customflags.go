@@ -26,7 +26,7 @@ import (
 	"path"
 	"strings"
 
-	"aswed.space/aswed/aswed/common/math"
+	"github.com/aswedchain/aswed/common/math"
 	"gopkg.in/urfave/cli.v1"
 )
 

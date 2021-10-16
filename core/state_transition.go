@@ -21,13 +21,13 @@ import (
 	"math"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	cmath "aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/consensus"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	cmath "github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/consensus"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/params"
 )
 
 var emptyCodeHash = crypto.Keccak256Hash(nil)

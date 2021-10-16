@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // filter is a helper struct that holds meta information over the filter type

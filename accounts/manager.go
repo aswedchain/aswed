@@ -21,8 +21,8 @@ import (
 	"sort"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/event"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/event"
 )
 
 // Config contains the settings of the global account manager.

@@ -22,7 +22,7 @@ import (
 	"os"
 	"runtime"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 func init() {

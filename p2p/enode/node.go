@@ -26,8 +26,8 @@ import (
 	"net"
 	"strings"
 
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 var errMissingPrefix = errors.New("missing 'enr:' prefix for base64-encoded record")

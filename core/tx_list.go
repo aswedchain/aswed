@@ -23,8 +23,8 @@ import (
 	"sort"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // nonceHeap is a heap.Interface implementation over 64bit unsigned integers for

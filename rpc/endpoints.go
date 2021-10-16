@@ -20,7 +20,7 @@ import (
 	"net"
 	"strings"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // StartIPCEndpoint starts an IPC endpoint.

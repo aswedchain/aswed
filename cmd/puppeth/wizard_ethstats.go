@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sort"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // deployEthstats queries the user for various input on deploying an ethstats

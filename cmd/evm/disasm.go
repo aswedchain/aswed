@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"aswed.space/aswed/aswed/core/asm"
+	"github.com/aswedchain/aswed/core/asm"
 	"gopkg.in/urfave/cli.v1"
 )
 

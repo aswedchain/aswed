@@ -23,9 +23,9 @@ import (
 	"io"
 	"sort"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/trie"
 )
 
 type kv struct {

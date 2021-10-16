@@ -19,7 +19,7 @@ package snapshot
 import (
 	"bytes"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // hashes is a helper to implement sort.Interface.

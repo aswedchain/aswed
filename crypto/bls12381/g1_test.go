@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 func (g *G1) one() *PointG1 {

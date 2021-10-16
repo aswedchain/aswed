@@ -20,10 +20,10 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/prque"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/ethdb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/prque"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/ethdb"
 )
 
 // ErrNotRequested is returned by the trie sync when it's requested to process a

@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/common"
 )
 
 func verify(t *testing.T, jsondata, calldata string, exp []interface{}) {

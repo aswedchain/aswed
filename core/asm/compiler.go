@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/core/vm"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/core/vm"
 )
 
 // Compiler contains information about the parsed source

@@ -22,7 +22,7 @@ import (
 	"sort"
 	"testing"
 
-	"aswed.space/aswed/aswed/ethdb"
+	"github.com/aswedchain/aswed/ethdb"
 )
 
 // TestDatabaseSuite runs a suite of tests against a KeyValueStore database

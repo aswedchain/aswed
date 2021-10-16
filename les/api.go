@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"time"
 
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/common/mclock"
-	vfs "aswed.space/aswed/aswed/les/vflux/server"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/mclock"
+	vfs "github.com/aswedchain/aswed/les/vflux/server"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 var (

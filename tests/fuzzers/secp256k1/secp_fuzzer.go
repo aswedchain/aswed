@@ -22,7 +22,7 @@ import (
 	"fmt"
 
 	"github.com/btcsuite/btcd/btcec"
-	"aswed.space/aswed/aswed/crypto/secp256k1"
+	"github.com/aswedchain/aswed/crypto/secp256k1"
 	fuzz "github.com/google/gofuzz"
 )
 

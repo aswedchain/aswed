@@ -21,7 +21,7 @@ import (
 	"math"
 	"math/big"
 
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 var ErrNoReply = errors.New("no reply for given request")

@@ -21,7 +21,7 @@ package keystore
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 	"github.com/rjeczalik/notify"
 )
 

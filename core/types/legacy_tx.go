@@ -19,7 +19,7 @@ package types
 import (
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // LegacyTx is the transaction data of regular Ethereum transactions.

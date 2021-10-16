@@ -24,11 +24,11 @@ import (
 	"net"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/discover/v5wire"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/discover/v5wire"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
 )
 
 // readError represents an error during packet reading.

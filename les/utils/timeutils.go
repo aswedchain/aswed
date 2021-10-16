@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/mclock"
 )
 
 type UpdateTimer struct {

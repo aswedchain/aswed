@@ -22,12 +22,12 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/cmd/devp2p/internal/v4test"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/discover"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/cmd/devp2p/internal/v4test"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/discover"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

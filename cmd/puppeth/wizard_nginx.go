@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // ensureVirtualHost checks whether a reverse-proxy is running on the specified

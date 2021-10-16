@@ -19,10 +19,10 @@ package ethtest
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/internal/utesting"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/internal/utesting"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // Suite represents a structure used to test a node's conformance

@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/accounts/abi"
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/common"
 )
 
 // Tests that all the selectors contained in the 4byte database are valid.

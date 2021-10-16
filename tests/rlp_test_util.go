@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"strings"
 
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // RLPTest is the JSON structure of a single RLP test.

@@ -17,8 +17,8 @@
 package les
 
 import (
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/p2p"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/p2p"
 )
 
 var (

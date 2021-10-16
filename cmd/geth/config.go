@@ -27,16 +27,16 @@ import (
 
 	"gopkg.in/urfave/cli.v1"
 
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/eth/catalyst"
-	"aswed.space/aswed/aswed/eth/ethconfig"
-	"aswed.space/aswed/aswed/internal/debug"
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
-	"aswed.space/aswed/aswed/node"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/eth/catalyst"
+	"github.com/aswedchain/aswed/eth/ethconfig"
+	"github.com/aswedchain/aswed/internal/debug"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
+	"github.com/aswedchain/aswed/node"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/params"
 	"github.com/naoina/toml"
 )
 

@@ -31,12 +31,12 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/ethdb/leveldb"
-	"aswed.space/aswed/aswed/ethdb/memorydb"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/ethdb/leveldb"
+	"github.com/aswedchain/aswed/ethdb/memorydb"
+	"github.com/aswedchain/aswed/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

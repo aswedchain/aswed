@@ -4,13 +4,13 @@ import (
 	"math"
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/consensus/congress/vmcaller"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/consensus/congress/vmcaller"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
 )
 
 var (

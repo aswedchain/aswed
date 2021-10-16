@@ -19,7 +19,7 @@
 package metrics
 
 import (
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 	"github.com/shirou/gopsutil/cpu"
 )
 

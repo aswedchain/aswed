@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"aswed.space/aswed/aswed/tests/fuzzers/stacktrie"
+	"github.com/aswedchain/aswed/tests/fuzzers/stacktrie"
 )
 
 func main() {

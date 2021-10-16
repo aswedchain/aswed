@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/les/utils"
+	"github.com/aswedchain/aswed/les/utils"
 )
 
 func TestTransition(t *testing.T) {

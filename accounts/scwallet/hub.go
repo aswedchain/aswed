@@ -41,10 +41,10 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/log"
 	pcsc "github.com/gballet/go-libpcsclite"
 )
 

@@ -19,15 +19,15 @@ package main
 import (
 	"strconv"
 
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/accounts/abi/bind"
-	"aswed.space/aswed/aswed/accounts/external"
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/contracts/checkpointoracle"
-	"aswed.space/aswed/aswed/ethclient"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/accounts/abi/bind"
+	"github.com/aswedchain/aswed/accounts/external"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/contracts/checkpointoracle"
+	"github.com/aswedchain/aswed/ethclient"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

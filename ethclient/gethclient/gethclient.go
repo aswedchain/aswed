@@ -23,12 +23,12 @@ import (
 	"runtime"
 	"runtime/debug"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // Client is a wrapper around rpc.Client that implements geth-specific functionality.

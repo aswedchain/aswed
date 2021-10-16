@@ -21,15 +21,15 @@ import (
 	"math/big"
 	"sync"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rpc"
-	"aswed.space/aswed/aswed/signer/core/apitypes"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rpc"
+	"github.com/aswedchain/aswed/signer/core/apitypes"
 )
 
 type ExternalBackend struct {

@@ -26,12 +26,12 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/internal/testlog"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/internal/testlog"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
 )
 
 const (

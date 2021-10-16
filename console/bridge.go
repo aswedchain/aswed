@@ -25,12 +25,12 @@ import (
 	"time"
 
 	"github.com/dop251/goja"
-	"aswed.space/aswed/aswed/accounts/scwallet"
-	"aswed.space/aswed/aswed/accounts/usbwallet"
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/console/prompt"
-	"aswed.space/aswed/aswed/internal/jsre"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/accounts/scwallet"
+	"github.com/aswedchain/aswed/accounts/usbwallet"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/console/prompt"
+	"github.com/aswedchain/aswed/internal/jsre"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // bridge is a collection of JavaScript utility methods to bride the .js runtime

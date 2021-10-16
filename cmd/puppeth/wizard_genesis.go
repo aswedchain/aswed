@@ -29,10 +29,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
 )
 
 // makeGenesis creates a new genesis struct based on some user input.

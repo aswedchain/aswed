@@ -20,7 +20,7 @@ package utils
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/console/prompt"
+	"github.com/aswedchain/aswed/console/prompt"
 )
 
 // GetPassPhrase displays the given text(prompt) to the user and requests some textual

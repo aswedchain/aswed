@@ -23,15 +23,15 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
 )
 
 const (

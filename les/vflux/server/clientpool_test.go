@@ -22,11 +22,11 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/p2p/nodestate"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/p2p/nodestate"
 )
 
 const defaultConnectedBias = time.Minute * 3

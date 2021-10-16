@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"time"
 
-	"aswed.space/aswed/aswed/cmd/devp2p/internal/v5test"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/p2p/discover"
+	"github.com/aswedchain/aswed/cmd/devp2p/internal/v5test"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/p2p/discover"
 	"gopkg.in/urfave/cli.v1"
 )
 

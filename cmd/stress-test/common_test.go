@@ -6,8 +6,8 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/params"
 )
 
 func TestPackData(t *testing.T) {

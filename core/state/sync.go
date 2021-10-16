@@ -19,10 +19,10 @@ package state
 import (
 	"bytes"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/trie"
 )
 
 // NewStateSync create a new state trie download scheduler.

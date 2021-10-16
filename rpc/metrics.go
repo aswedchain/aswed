@@ -19,7 +19,7 @@ package rpc
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 var (

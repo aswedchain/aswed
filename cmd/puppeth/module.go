@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 var (

@@ -3,9 +3,9 @@ InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://aswed.space/aswed/aswed/issues"
-!define UPDATEURL "https://aswed.space/aswed/aswed/releases"
-!define ABOUTURL "https://aswed.space/aswed/aswed#ethereum-go"
+!define HELPURL "https://github.com/aswedchain/aswed/issues"
+!define UPDATEURL "https://github.com/aswedchain/aswed/releases"
+!define ABOUTURL "https://github.com/aswedchain/aswed#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license

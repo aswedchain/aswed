@@ -19,8 +19,8 @@ package eth
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/common/bitutil"
-	"aswed.space/aswed/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/common/bitutil"
+	"github.com/aswedchain/aswed/core/rawdb"
 )
 
 const (

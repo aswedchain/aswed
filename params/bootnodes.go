@@ -16,7 +16,7 @@
 
 package params
 
-import "aswed.space/aswed/aswed/common"
+import "github.com/aswedchain/aswed/common"
 
 // MainnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the main Ethereum network.

@@ -26,11 +26,11 @@ import (
 	"os"
 	"strings"
 
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 type Chain struct {

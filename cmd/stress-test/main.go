@@ -5,11 +5,11 @@ import (
 	"math/big"
 	"os"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/fdlimit"
-	"aswed.space/aswed/aswed/internal/flags"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/fdlimit"
+	"github.com/aswedchain/aswed/internal/flags"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

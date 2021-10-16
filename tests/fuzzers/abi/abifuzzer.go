@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"strings"
 
-	"aswed.space/aswed/aswed/accounts/abi"
+	"github.com/aswedchain/aswed/accounts/abi"
 	fuzz "github.com/google/gofuzz"
 )
 

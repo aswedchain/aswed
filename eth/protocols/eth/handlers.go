@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/rlp"
-	"aswed.space/aswed/aswed/trie"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/rlp"
+	"github.com/aswedchain/aswed/trie"
 )
 
 // handleGetBlockHeaders handles Block header query, collect the requested headers and reply

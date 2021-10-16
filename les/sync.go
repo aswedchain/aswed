@@ -21,12 +21,12 @@ import (
 	"errors"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/eth/downloader"
-	"aswed.space/aswed/aswed/light"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/eth/downloader"
+	"github.com/aswedchain/aswed/light"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/params"
 )
 
 var errInvalidCheckpoint = errors.New("invalid advertised checkpoint")

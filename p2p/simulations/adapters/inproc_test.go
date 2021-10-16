@@ -23,7 +23,7 @@ import (
 	"sync"
 	"testing"
 
-	"aswed.space/aswed/aswed/p2p/simulations/pipes"
+	"github.com/aswedchain/aswed/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

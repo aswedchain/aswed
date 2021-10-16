@@ -17,10 +17,10 @@
 package eth
 
 import (
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 // enrEntry is the ENR entry which advertises `eth` protocol on the discovery.

@@ -4,7 +4,7 @@ import (
 	"crypto/ecdsa"
 	"testing"
 
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/crypto"
 	"github.com/stretchr/testify/require"
 )
 

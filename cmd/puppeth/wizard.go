@@ -31,9 +31,9 @@ import (
 	"strings"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

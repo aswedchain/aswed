@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/log"
 )
 
 // deployFaucet queries the user for various input on deploying a faucet, after

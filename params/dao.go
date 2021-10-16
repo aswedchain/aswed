@@ -19,7 +19,7 @@ package params
 import (
 	"math/big"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

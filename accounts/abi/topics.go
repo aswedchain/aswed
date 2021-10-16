@@ -23,8 +23,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 // MakeTopics converts a filter query argument list into a filter topic set.

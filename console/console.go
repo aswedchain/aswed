@@ -29,11 +29,11 @@ import (
 	"syscall"
 
 	"github.com/dop251/goja"
-	"aswed.space/aswed/aswed/console/prompt"
-	"aswed.space/aswed/aswed/internal/jsre"
-	"aswed.space/aswed/aswed/internal/jsre/deps"
-	"aswed.space/aswed/aswed/internal/web3ext"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/console/prompt"
+	"github.com/aswedchain/aswed/internal/jsre"
+	"github.com/aswedchain/aswed/internal/jsre/deps"
+	"github.com/aswedchain/aswed/internal/web3ext"
+	"github.com/aswedchain/aswed/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 )

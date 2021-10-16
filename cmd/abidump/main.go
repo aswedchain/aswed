@@ -23,8 +23,8 @@ import (
 	"os"
 	"strings"
 
-	"aswed.space/aswed/aswed/signer/core/apitypes"
-	"aswed.space/aswed/aswed/signer/fourbyte"
+	"github.com/aswedchain/aswed/signer/core/apitypes"
+	"github.com/aswedchain/aswed/signer/fourbyte"
 )
 
 func init() {

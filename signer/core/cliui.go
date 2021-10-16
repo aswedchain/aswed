@@ -24,10 +24,10 @@ import (
 	"strings"
 	"sync"
 
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/console/prompt"
-	"aswed.space/aswed/aswed/internal/ethapi"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/console/prompt"
+	"github.com/aswedchain/aswed/internal/ethapi"
+	"github.com/aswedchain/aswed/log"
 )
 
 type CommandlineUI struct {

@@ -17,8 +17,8 @@
 package runtime
 
 import (
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/core/vm"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

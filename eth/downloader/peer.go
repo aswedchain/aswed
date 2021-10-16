@@ -27,11 +27,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/eth/protocols/eth"
-	"aswed.space/aswed/aswed/event"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p/msgrate"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/eth/protocols/eth"
+	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p/msgrate"
 )
 
 const (

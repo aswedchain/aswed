@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"net"
 
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/p2p/enode"
 	"gopkg.in/urfave/cli.v1"
 )
 

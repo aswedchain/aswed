@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
 )
 
 func TestBlockNumberJSONUnmarshal(t *testing.T) {

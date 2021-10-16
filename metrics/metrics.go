@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // Enabled is checked by the constructor functions for all of the

@@ -22,7 +22,7 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // Strings represents s slice of strs.

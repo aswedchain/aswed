@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 )
 
 func TestTransaction(t *testing.T) {

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"sort"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/rawdb"
-	"aswed.space/aswed/aswed/ethdb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/rawdb"
+	"github.com/aswedchain/aswed/ethdb"
 )
 
 // Iterator is an iterator to step over all the accounts or the specific

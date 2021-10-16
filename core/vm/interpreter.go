@@ -20,9 +20,9 @@ import (
 	"hash"
 	"sync/atomic"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/log"
 )
 
 // Config are the configuration options for the Interpreter

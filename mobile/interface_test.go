@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 func TestInterfaceGetSet(t *testing.T) {

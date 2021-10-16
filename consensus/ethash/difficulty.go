@@ -19,7 +19,7 @@ package ethash
 import (
 	"math/big"
 
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/core/types"
 	"github.com/holiman/uint256"
 )
 

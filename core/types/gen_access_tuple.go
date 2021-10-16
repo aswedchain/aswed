@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // MarshalJSON marshals as JSON.

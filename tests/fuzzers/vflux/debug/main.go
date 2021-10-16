@@ -21,8 +21,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/tests/fuzzers/vflux"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/tests/fuzzers/vflux"
 )
 
 func main() {

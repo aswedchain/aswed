@@ -23,10 +23,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"aswed.space/aswed/aswed/core/state"
-	"aswed.space/aswed/aswed/core/vm"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/tests"
+	"github.com/aswedchain/aswed/core/state"
+	"github.com/aswedchain/aswed/core/vm"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/tests"
 
 	"gopkg.in/urfave/cli.v1"
 )

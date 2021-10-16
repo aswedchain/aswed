@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/common/math"
+	"github.com/aswedchain/aswed/common/math"
 )
 
 func TestStreamKind(t *testing.T) {

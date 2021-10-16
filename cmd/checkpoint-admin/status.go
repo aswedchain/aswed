@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/common"
 	"gopkg.in/urfave/cli.v1"
 )
 

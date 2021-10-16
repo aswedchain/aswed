@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/core/vm"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/core/vm"
 )
 
 const (

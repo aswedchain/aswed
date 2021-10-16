@@ -19,7 +19,7 @@ package downloader
 import (
 	"fmt"
 
-	"aswed.space/aswed/aswed/core/types"
+	"github.com/aswedchain/aswed/core/types"
 )
 
 // peerDropFn is a callback type for dropping a peer detected as malicious.

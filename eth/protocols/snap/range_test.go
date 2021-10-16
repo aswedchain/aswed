@@ -19,7 +19,7 @@ package snap
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 // Tests that given a starting hash and a density, the hash ranger can correctly

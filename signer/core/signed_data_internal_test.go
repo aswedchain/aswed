@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/common/hexutil"
 )
 
 func TestBytesPadding(t *testing.T) {

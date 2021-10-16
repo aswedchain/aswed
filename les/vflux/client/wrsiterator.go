@@ -19,9 +19,9 @@ package client
 import (
 	"sync"
 
-	"aswed.space/aswed/aswed/les/utils"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/nodestate"
+	"github.com/aswedchain/aswed/les/utils"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/nodestate"
 )
 
 // WrsIterator returns nodes from the specified selectable set with a weighted random

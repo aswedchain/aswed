@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 func newTestFullNode(v []byte) []interface{} {

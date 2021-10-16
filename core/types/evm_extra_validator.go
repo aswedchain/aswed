@@ -1,6 +1,6 @@
 package types
 
-import "aswed.space/aswed/aswed/common"
+import "github.com/aswedchain/aswed/common"
 
 // EvmExtraValidator contains some extra validations to a transaction,
 // and the validator is used inside the evm.

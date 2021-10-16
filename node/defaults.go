@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/nat"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/nat"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 const (

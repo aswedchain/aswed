@@ -25,12 +25,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/node"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/p2p/simulations"
-	"aswed.space/aswed/aswed/p2p/simulations/adapters"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/node"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/simulations"
+	"github.com/aswedchain/aswed/p2p/simulations/adapters"
 )
 
 var adapterType = flag.String("adapter", "sim", `node adapter to use (one of "sim", "exec" or "docker")`)

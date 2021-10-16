@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/ethdb"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/ethdb"
 )
 
 // Tests that the node iterator indeed walks over the entire database contents.

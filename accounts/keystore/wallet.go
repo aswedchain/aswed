@@ -19,10 +19,10 @@ package keystore
 import (
 	"math/big"
 
-	"aswed.space/aswed/aswed"
-	"aswed.space/aswed/aswed/accounts"
-	"aswed.space/aswed/aswed/core/types"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed"
+	"github.com/aswedchain/aswed/accounts"
+	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 // keystoreWallet implements the accounts.Wallet interface for the original

@@ -23,7 +23,7 @@ import (
 	"reflect"
 	"testing"
 
-	"aswed.space/aswed/aswed/core/vm"
+	"github.com/aswedchain/aswed/core/vm"
 )
 
 func TestState(t *testing.T) {

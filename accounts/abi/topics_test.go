@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
 )
 
 func TestMakeTopics(t *testing.T) {

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"sync"
 
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/crypto"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/crypto"
 	"golang.org/x/crypto/sha3"
 )
 

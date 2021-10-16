@@ -21,10 +21,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"aswed.space/aswed/aswed/cmd/utils"
-	"aswed.space/aswed/aswed/console"
-	"aswed.space/aswed/aswed/node"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/cmd/utils"
+	"github.com/aswedchain/aswed/console"
+	"github.com/aswedchain/aswed/node"
+	"github.com/aswedchain/aswed/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

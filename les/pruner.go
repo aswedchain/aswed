@@ -20,10 +20,10 @@ import (
 	"sync"
 	"time"
 
-	"aswed.space/aswed/aswed/common/math"
-	"aswed.space/aswed/aswed/core"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/common/math"
+	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/log"
 )
 
 // pruner is responsible for pruning historical light chain data.

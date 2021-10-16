@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"aswed.space/aswed/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/p2p/enr"
 )
 
 func TestReadNodes(t *testing.T) {

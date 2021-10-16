@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"strings"
 
-	"aswed.space/aswed/aswed/common/hexutil"
-	"aswed.space/aswed/aswed/crypto"
-	"aswed.space/aswed/aswed/internal/debug"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/p2p"
-	"aswed.space/aswed/aswed/p2p/enode"
-	"aswed.space/aswed/aswed/rpc"
+	"github.com/aswedchain/aswed/common/hexutil"
+	"github.com/aswedchain/aswed/crypto"
+	"github.com/aswedchain/aswed/internal/debug"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/p2p"
+	"github.com/aswedchain/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/rpc"
 )
 
 // apis returns the collection of built-in RPC APIs.

@@ -23,12 +23,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/eth/ethconfig"
-	"aswed.space/aswed/aswed/ethdb"
-	"aswed.space/aswed/aswed/les/flowcontrol"
-	"aswed.space/aswed/aswed/log"
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/eth/ethconfig"
+	"github.com/aswedchain/aswed/ethdb"
+	"github.com/aswedchain/aswed/les/flowcontrol"
+	"github.com/aswedchain/aswed/log"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 const makeCostStats = false // make request cost statistics during operation

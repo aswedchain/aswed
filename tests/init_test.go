@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 )
 
 var (

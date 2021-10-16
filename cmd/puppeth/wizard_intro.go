@@ -26,7 +26,7 @@ import (
 	"strings"
 	"sync"
 
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/log"
 )
 
 // makeWizard creates and returns a new puppeth wizard.

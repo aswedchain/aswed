@@ -25,10 +25,10 @@ import (
 	"strings"
 	"time"
 
-	"aswed.space/aswed/aswed/core/forkid"
-	"aswed.space/aswed/aswed/p2p/enr"
-	"aswed.space/aswed/aswed/params"
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/core/forkid"
+	"github.com/aswedchain/aswed/p2p/enr"
+	"github.com/aswedchain/aswed/params"
+	"github.com/aswedchain/aswed/rlp"
 	"gopkg.in/urfave/cli.v1"
 )
 

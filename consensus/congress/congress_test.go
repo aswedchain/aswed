@@ -1,7 +1,7 @@
 package congress
 
 import (
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 	"testing"
 )
 

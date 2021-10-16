@@ -26,7 +26,7 @@ import (
 	"math/rand"
 	"time"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 	"github.com/dop251/goja"
 )
 

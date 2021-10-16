@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"sort"
 
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 )
 
 // Forks table defines supported forks and their chain config.

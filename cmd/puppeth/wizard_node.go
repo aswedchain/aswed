@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"aswed.space/aswed/aswed/accounts/keystore"
-	"aswed.space/aswed/aswed/common"
-	"aswed.space/aswed/aswed/log"
+	"github.com/aswedchain/aswed/accounts/keystore"
+	"github.com/aswedchain/aswed/common"
+	"github.com/aswedchain/aswed/log"
 )
 
 // deployNode creates a new node configuration based on some user input.

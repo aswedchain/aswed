@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"aswed.space/aswed/aswed/params"
+	"github.com/aswedchain/aswed/params"
 )
 
 // VerifyGaslimit verifies the header gas limit according increase/decrease

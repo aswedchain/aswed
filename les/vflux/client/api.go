@@ -19,9 +19,9 @@ package client
 import (
 	"time"
 
-	"aswed.space/aswed/aswed/common/mclock"
-	"aswed.space/aswed/aswed/les/utils"
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/common/mclock"
+	"github.com/aswedchain/aswed/les/utils"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 // PrivateClientAPI implements the vflux client side API

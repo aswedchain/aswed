@@ -40,7 +40,7 @@ import (
 	"io"
 	"sort"
 
-	"aswed.space/aswed/aswed/rlp"
+	"github.com/aswedchain/aswed/rlp"
 )
 
 const SizeLimit = 300 // maximum encoded size of a node record in bytes

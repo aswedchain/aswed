@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"aswed.space/aswed/aswed/common"
+	"github.com/aswedchain/aswed/common"
 )
 
 func TestPairingExpected(t *testing.T) {

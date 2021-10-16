@@ -20,7 +20,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"aswed.space/aswed/aswed/p2p/enode"
+	"github.com/aswedchain/aswed/p2p/enode"
 )
 
 const (

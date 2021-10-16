@@ -21,7 +21,7 @@ package p2p
 import (
 	"net"
 
-	"aswed.space/aswed/aswed/metrics"
+	"github.com/aswedchain/aswed/metrics"
 )
 
 const (

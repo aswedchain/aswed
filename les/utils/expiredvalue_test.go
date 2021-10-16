@@ -19,7 +19,7 @@ package utils
 import (
 	"testing"
 
-	"aswed.space/aswed/aswed/common/mclock"
+	"github.com/aswedchain/aswed/common/mclock"
 )
 
 func TestValueExpiration(t *testing.T) {
