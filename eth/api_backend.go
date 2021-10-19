@@ -19,6 +19,8 @@ package eth
 import (
 	"context"
 	"errors"
+	"github.com/aswedchain/aswed/eth/tracers"
+	"github.com/aswedchain/aswed/internal/ethapi"
 	"math/big"
 
 	"github.com/aswedchain/aswed/accounts"
@@ -377,4 +379,24 @@ func (b *EthAPIBackend) StateAtTransaction(ctx context.Context, block *types.Blo
 
 func (b *EthAPIBackend) ChainHeaderReader() consensus.ChainHeaderReader {
 	return b.eth.blockchain
+}
+
+func (b *EthAPIBackend) TraceBlock(ctx context.Context, block *types.Block, tracer string) ([]*ethapi.TxTraceResult, error) {
+	api := tracers.NewAPI(b.eth.APIBackend)
+	traces, err := api.TraceBlockByTracer(ctx, block, tracer)
+	if err != nil {
+		return nil, err
+	}
+	var results []*ethapi.TxTraceResult
+	if len(traces) == 0 {
+		return results, nil
+	}
+	for _, trace := range traces {
+		var result = &ethapi.TxTraceResult{
+			Result: trace.Result,
+			Error: trace.Error,
+		}
+		results = append(results, result)
+	}
+	return results, nil
 }

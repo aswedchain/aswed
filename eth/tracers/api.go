@@ -454,6 +454,15 @@ func (api *API) TraceBlock(ctx context.Context, blob []byte, config *TraceConfig
 	return api.traceBlock(ctx, block, config)
 }
 
+// TraceBlockByTracer returns the structured logs created during the execution of EVM
+// and returns them as a JSON object.
+func (api *API) TraceBlockByTracer(ctx context.Context, block *types.Block, tracer string) ([]*txTraceResult, error) {
+	config := &TraceConfig{
+		Tracer: &tracer,
+	}
+	return api.traceBlock(ctx, block, config)
+}
+
 // TraceBlockFromFile returns the structured logs created during the execution of
 // EVM and returns them as a JSON object.
 func (api *API) TraceBlockFromFile(ctx context.Context, file string, config *TraceConfig) ([]*txTraceResult, error) {

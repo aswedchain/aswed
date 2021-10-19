@@ -83,6 +83,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.1.1 // indirect
 	github.com/aws/smithy-go v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
+	github.com/go-bindata/go-bindata v3.1.2+incompatible // indirect
 	github.com/mattn/go-ieproxy v0.0.0-20190702010315-6dee0af9227d // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
 	github.com/opentracing/opentracing-go v1.1.0 // indirect

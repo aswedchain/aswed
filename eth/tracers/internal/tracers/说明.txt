@@ -1,0 +1,18 @@
+生成_replay_tracerJs数据：
+    将.tar.gz压缩文件使用16进制方式打印出来：
+        hexdump -e '"\\\x" /1 "%02x"' filename
+
+生成digest数据：
+    将.js文件生成sha256：
+        sha256sum replay_tracer.js
+
+
+官方推荐方法：
+    使用go-bindata工具生成assets.go文件
+
+    安装 go-bindata： go get -u github.com/go-bindata/go-bindata/...
+
+    执行：
+        在：aswed/eth/tracers/internal/tracers 目录下执行命令：
+        go-bindata -nometadata -o assets.go -pkg tracers -ignore tracers.go -ignore assets.go -ignore 说明.txt ./...
+        gofmt -s -w assets.go

@@ -92,6 +92,14 @@ type Backend interface {
 
 	ChainConfig() *params.ChainConfig
 	Engine() consensus.Engine
+
+	// Trace
+	TraceBlock(ctx context.Context, block *types.Block, tracer string) ([]*TxTraceResult, error)
+}
+
+type TxTraceResult struct {
+	Result interface{} `json:"result,omitempty"` // Trace results produced by the tracer
+	Error  string      `json:"error,omitempty"`  // Trace failure produced by the tracer
 }
 
 func GetAPIs(apiBackend Backend) []rpc.API {

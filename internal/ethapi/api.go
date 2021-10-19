@@ -886,6 +886,13 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 		}
 		item["receipts"] = receiptsData
 		result = append(result, item)
+
+		// 获取合约内部交易
+		traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
+		if err != nil {
+			return nil, err
+		}
+		item["traces"] = traces
 	}
 	return result, nil
 }
