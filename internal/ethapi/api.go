@@ -812,7 +812,7 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 	var result []map[string]interface{}
 	for i:=int64(0);i<count;i++ {
 		var item = make(map[string]interface{})
-		blockHash := common.Hash{}
+		//blockHash := common.Hash{}
 		// 获取区块数据，含交易
 		blockNumber :=  number.Int64()+i
 		var txs = make(map[common.Hash]*types.Transaction)
@@ -830,7 +830,7 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 		}else{
 			item["block"] = data
 		}
-		blockHash = block.Hash()
+		blockHash := block.Hash()
 		for _,tx := range block.Transactions(){
 			txs[tx.Hash()] = tx
 		}
@@ -888,11 +888,14 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 		result = append(result, item)
 
 		// 获取合约内部交易
-		traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
-		if err != nil {
-			return nil, err
+		if blockNumber > 0 { // 创世块没有trace信息
+			traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
+			if err != nil {
+				return nil, err
+			}
+			item["traces"] = traces
 		}
-		item["traces"] = traces
+
 	}
 	return result, nil
 }

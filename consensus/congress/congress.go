@@ -1284,11 +1284,15 @@ func (c *Congress) getBlacklist(header *types.Header, parentState *state.StateDB
 	}
 	froms, err := get("getBlacksFrom")
 	if err != nil {
-		return nil, err
+		// 此处允许获取不到数据
+		log.Warn(fmt.Sprintf("getBlacksFrom failed : %v", err))
+		//return nil, err
 	}
 	tos, err := get("getBlacksTo")
 	if err != nil {
-		return nil, err
+		// 此处允许获取不到数据
+		log.Warn(fmt.Sprintf("getBlacksTo failed : %v", err))
+		//return nil, err
 	}
 
 	m := make(map[common.Address]blacklistDirection)
