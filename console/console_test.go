@@ -31,7 +31,6 @@ import (
 	"github.com/aswedchain/aswed/console/prompt"
 	"github.com/aswedchain/aswed/core"
 	"github.com/aswedchain/aswed/eth"
-	"github.com/aswedchain/aswed/eth/ethconfig"
 	"github.com/aswedchain/aswed/internal/jsre"
 	"github.com/aswedchain/aswed/miner"
 	"github.com/aswedchain/aswed/node"
@@ -86,7 +85,7 @@ type tester struct {
 
 // newTester creates a test environment based on which the console can operate.
 // Please ensure you call Close() on the returned tester to avoid leaks.
-func newTester(t *testing.T, confOverride func(*ethconfig.Config)) *tester {
+func newTester(t *testing.T, confOverride func(*eth.Config)) *tester {
 	// Create a temporary storage for the node keys and initialize it
 	workspace, err := ioutil.TempDir("", "console-tester-")
 	if err != nil {
@@ -98,7 +97,7 @@ func newTester(t *testing.T, confOverride func(*ethconfig.Config)) *tester {
 	if err != nil {
 		t.Fatalf("failed to create node: %v", err)
 	}
-	ethConf := &ethconfig.Config{
+	ethConf := &eth.Config{
 		Genesis: core.DeveloperGenesisBlock(15, common.Address{}),
 		Miner: miner.Config{
 			Etherbase: common.HexToAddress(testAddress),

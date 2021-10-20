@@ -26,7 +26,7 @@ import (
 	"github.com/aswedchain/aswed/accounts/keystore"
 	"github.com/aswedchain/aswed/cmd/utils"
 	"github.com/aswedchain/aswed/crypto"
-	"github.com/google/uuid"
+	"github.com/pborman/uuid"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -86,12 +86,9 @@ If you want to encrypt an existing private key, it can be specified by setting
 		}
 
 		// Create the keyfile object with a random UUID.
-		UUID, err := uuid.NewRandom()
-		if err != nil {
-			utils.Fatalf("Failed to generate random uuid: %v", err)
-		}
+		id := uuid.NewRandom()
 		key := &keystore.Key{
-			Id:         UUID,
+			Id:         id,
 			Address:    crypto.PubkeyToAddress(privateKey.PublicKey),
 			PrivateKey: privateKey,
 		}

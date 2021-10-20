@@ -23,7 +23,6 @@ import (
 	"github.com/aswedchain/aswed/common"
 	"github.com/aswedchain/aswed/core/state"
 	"github.com/aswedchain/aswed/core/types"
-	"github.com/aswedchain/aswed/core/vm"
 	"github.com/aswedchain/aswed/params"
 	"github.com/aswedchain/aswed/rpc"
 )
@@ -81,6 +80,10 @@ type Engine interface {
 	// VerifyUncles verifies that the given block's uncles conform to the consensus
 	// rules of a given engine.
 	VerifyUncles(chain ChainReader, block *types.Block) error
+
+	// VerifySeal checks whether the crypto seal on a header is valid according to
+	// the consensus rules of the given engine.
+	VerifySeal(chain ChainHeaderReader, header *types.Header) error
 
 	// Prepare initializes the consensus fields of a block header according to the
 	// rules of a particular engine. The changes are executed inline.
@@ -142,22 +145,13 @@ type PoSA interface {
 	PreHandle(chain ChainHeaderReader, header *types.Header, state *state.StateDB) error
 
 	// IsSysTransaction checks whether a specific transaction is a system transaction.
-	IsSysTransaction(sender common.Address, tx *types.Transaction, header *types.Header) (bool, error)
+	IsSysTransaction(tx *types.Transaction, header *types.Header) (bool, error)
 
 	// CanCreate determines where a given address can create a new contract.
 	CanCreate(state StateReader, addr common.Address, height *big.Int) bool
 
 	// ValidateTx do a consensus-related validation on the given transaction at the given header and state.
-	ValidateTx(sender common.Address, tx *types.Transaction, header *types.Header, parentState *state.StateDB) error
-
-	// CreateEvmExtraValidator returns a EvmExtraValidator if necessary.
-	CreateEvmExtraValidator(header *types.Header, parentState *state.StateDB) types.EvmExtraValidator
-
-	//Methods for debug trace
-
-	// ApplySysTx applies a system-transaction using a given evm,
-	// the main purpose of this method is for tracing a system-transaction.
-	ApplySysTx(evm *vm.EVM, state *state.StateDB, txIndex int, sender common.Address, tx *types.Transaction) (ret []byte, vmerr error, err error)
+	ValidateTx(tx *types.Transaction, header *types.Header, parentState *state.StateDB) error
 }
 
 type StateReader interface {

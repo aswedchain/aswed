@@ -36,6 +36,8 @@
     // result is invoked when all the opcodes have been iterated over and returns
     // the final result of the tracing.
     result: function(ctx) {
-        return this.hist;
+        if(this.nops > 0){
+            return this.hist;
+        }
     },
 }

@@ -21,7 +21,7 @@ package geth
 import (
 	"errors"
 
-	"github.com/aswedchain/aswed"
+	ethereum "github.com/aswedchain/aswed"
 	"github.com/aswedchain/aswed/common"
 )
 

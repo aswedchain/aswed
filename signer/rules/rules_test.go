@@ -28,7 +28,6 @@ import (
 	"github.com/aswedchain/aswed/core/types"
 	"github.com/aswedchain/aswed/internal/ethapi"
 	"github.com/aswedchain/aswed/signer/core"
-	"github.com/aswedchain/aswed/signer/core/apitypes"
 	"github.com/aswedchain/aswed/signer/storage"
 )
 
@@ -181,7 +180,7 @@ func TestSignTxRequest(t *testing.T) {
 	}
 	t.Logf("to %v", to.Address().String())
 	resp, err := r.ApproveTx(&core.SignTxRequest{
-		Transaction: apitypes.SendTxArgs{
+		Transaction: core.SendTxArgs{
 			From: *from,
 			To:   to},
 		Callinfo: nil,
@@ -433,15 +432,15 @@ func dummyTx(value hexutil.Big) *core.SignTxRequest {
 	gasPrice := hexutil.Big(*big.NewInt(2000000))
 
 	return &core.SignTxRequest{
-		Transaction: apitypes.SendTxArgs{
+		Transaction: core.SendTxArgs{
 			From:     *from,
 			To:       to,
 			Value:    value,
 			Nonce:    n,
-			GasPrice: &gasPrice,
+			GasPrice: gasPrice,
 			Gas:      gas,
 		},
-		Callinfo: []apitypes.ValidationInfo{
+		Callinfo: []core.ValidationInfo{
 			{Typ: "Warning", Message: "All your base are bellong to us"},
 		},
 		Meta: core.Metadata{Remote: "remoteip", Local: "localip", Scheme: "inproc"},

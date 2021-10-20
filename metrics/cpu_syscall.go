@@ -19,7 +19,7 @@
 package metrics
 
 import (
-	syscall "golang.org/x/sys/unix"
+	"syscall"
 
 	"github.com/aswedchain/aswed/log"
 )

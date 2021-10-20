@@ -33,7 +33,6 @@ import (
 	"github.com/aswedchain/aswed/consensus/ethash"
 	"github.com/aswedchain/aswed/eth"
 	"github.com/aswedchain/aswed/eth/downloader"
-	"github.com/aswedchain/aswed/eth/ethconfig"
 	"github.com/aswedchain/aswed/les/flowcontrol"
 	"github.com/aswedchain/aswed/log"
 	"github.com/aswedchain/aswed/node"
@@ -493,14 +492,14 @@ func testSim(t *testing.T, serverCount, clientCount int, serverDir, clientDir []
 }
 
 func newLesClientService(ctx *adapters.ServiceContext, stack *node.Node) (node.Lifecycle, error) {
-	config := ethconfig.Defaults
+	config := eth.DefaultConfig
 	config.SyncMode = downloader.LightSync
 	config.Ethash.PowMode = ethash.ModeFake
 	return New(stack, &config)
 }
 
 func newLesServerService(ctx *adapters.ServiceContext, stack *node.Node) (node.Lifecycle, error) {
-	config := ethconfig.Defaults
+	config := eth.DefaultConfig
 	config.SyncMode = downloader.FullSync
 	config.LightServ = testServerCapacity
 	config.LightPeers = testMaxClients

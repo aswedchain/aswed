@@ -1,16 +1,15 @@
 package systemcontract
 
 import (
-	"math"
-	"math/big"
-
 	"github.com/aswedchain/aswed/common"
-	"github.com/aswedchain/aswed/consensus/congress/vmcaller"
 	"github.com/aswedchain/aswed/core"
 	"github.com/aswedchain/aswed/core/state"
 	"github.com/aswedchain/aswed/core/types"
+	"github.com/aswedchain/aswed/core/vm"
 	"github.com/aswedchain/aswed/log"
 	"github.com/aswedchain/aswed/params"
+	"math"
+	"math/big"
 )
 
 var (
@@ -56,8 +55,12 @@ func (s *hardForkAddressList) Execute(state *state.StateDB, header *types.Header
 		return err
 	}
 
-	msg := vmcaller.NewLegacyMessage(header.Coinbase, &AddressListContractAddr, 0, new(big.Int), math.MaxUint64, new(big.Int), data, false)
-	_, err = vmcaller.ExecuteMsg(msg, state, header, chainContext, config)
+	msg := types.NewMessage(header.Coinbase, &AddressListContractAddr, 0, new(big.Int), math.MaxUint64, new(big.Int), data, false)
+
+	context := core.NewEVMContext(msg, header, chainContext, nil)
+	evm := vm.NewEVM(context, state, config, vm.Config{})
+
+	_, _, err = evm.Call(vm.AccountRef(msg.From()), *msg.To(), msg.Data(), msg.Gas(), msg.Value())
 
 	return
 }

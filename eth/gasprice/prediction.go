@@ -140,7 +140,7 @@ func (p *Prediction) loop() {
 }
 
 func (p *Prediction) update() {
-	txs, err := p.pool.Pending(true)
+	txs, err := p.pool.Pending()
 	if err != nil {
 		log.Error("failed to get pending transactions", "err", err)
 		return
@@ -211,7 +211,7 @@ func (p *Prediction) filteroutInvalid(txs TxByPrice) TxByPrice {
 		tx := txs[i]
 		if tx.Gas() > maxgas ||
 			time.Since(tx.LocalSeenTime()) > maxlive ||
-			tx.GasTipCapIntCmp(gwei) < 0 {
+			tx.GasPriceIntCmp(gwei) < 0 {
 			j--
 			txs[i], txs[j] = txs[j], txs[i]
 			continue

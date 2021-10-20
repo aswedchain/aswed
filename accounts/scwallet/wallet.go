@@ -33,7 +33,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aswedchain/aswed"
+	ethereum "github.com/aswedchain/aswed"
 	"github.com/aswedchain/aswed/accounts"
 	"github.com/aswedchain/aswed/common"
 	"github.com/aswedchain/aswed/core/types"
@@ -699,7 +699,7 @@ func (w *Wallet) signHash(account accounts.Account, hash []byte) ([]byte, error)
 // the needed details via SignTxWithPassphrase, or by other means (e.g. unlock
 // the account in a keystore).
 func (w *Wallet) SignTx(account accounts.Account, tx *types.Transaction, chainID *big.Int) (*types.Transaction, error) {
-	signer := types.LatestSignerForChainID(chainID)
+	signer := types.NewEIP155Signer(chainID)
 	hash := signer.Hash(tx)
 	sig, err := w.signHash(account, hash[:])
 	if err != nil {

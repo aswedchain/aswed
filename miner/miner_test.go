@@ -22,7 +22,7 @@ import (
 	"time"
 
 	"github.com/aswedchain/aswed/common"
-	"github.com/aswedchain/aswed/consensus/clique"
+	"github.com/aswedchain/aswed/consensus/ethash"
 	"github.com/aswedchain/aswed/core"
 	"github.com/aswedchain/aswed/core/rawdb"
 	"github.com/aswedchain/aswed/core/state"
@@ -31,6 +31,7 @@ import (
 	"github.com/aswedchain/aswed/eth/downloader"
 	"github.com/aswedchain/aswed/ethdb/memorydb"
 	"github.com/aswedchain/aswed/event"
+	"github.com/aswedchain/aswed/params"
 	"github.com/aswedchain/aswed/trie"
 )
 
@@ -63,7 +64,7 @@ type testBlockChain struct {
 func (bc *testBlockChain) CurrentBlock() *types.Block {
 	return types.NewBlock(&types.Header{
 		GasLimit: bc.gasLimit,
-	}, nil, nil, nil, trie.NewStackTrie(nil))
+	}, nil, nil, nil, new(trie.Trie))
 }
 
 func (bc *testBlockChain) GetBlock(hash common.Hash, number uint64) *types.Block {
@@ -242,20 +243,26 @@ func createMiner(t *testing.T) (*Miner, *event.TypeMux) {
 	if err != nil {
 		t.Fatalf("can't create new chain config: %v", err)
 	}
+	// Create event Mux
+	mux := new(event.TypeMux)
 	// Create consensus engine
-	engine := clique.New(chainConfig.Clique, chainDB)
+	engine := ethash.New(ethash.Config{}, []string{}, false)
+	engine.SetThreads(-1)
+	// Create isLocalBlock
+	isLocalBlock := func(block *types.Block) bool {
+		return true
+	}
 	// Create Ethereum backend
-	bc, err := core.NewBlockChain(chainDB, nil, chainConfig, engine, vm.Config{}, nil, nil)
+	limit := uint64(1000)
+	bc, err := core.NewBlockChain(chainDB, new(core.CacheConfig), chainConfig, engine, vm.Config{}, isLocalBlock, &limit)
 	if err != nil {
 		t.Fatalf("can't create new chain %v", err)
 	}
-	statedb, _ := state.New(common.Hash{}, state.NewDatabase(chainDB), nil)
+	statedb, _ := state.New(common.Hash{}, state.NewDatabase(rawdb.NewMemoryDatabase()), nil)
 	blockchain := &testBlockChain{statedb, 10000000, new(event.Feed)}
 
-	pool := core.NewTxPool(testTxPoolConfig, chainConfig, blockchain)
+	pool := core.NewTxPool(testTxPoolConfig, params.TestChainConfig, blockchain)
 	backend := NewMockBackend(bc, pool)
-	// Create event Mux
-	mux := new(event.TypeMux)
 	// Create Miner
-	return New(backend, &config, chainConfig, mux, engine, nil), mux
+	return New(backend, &config, chainConfig, mux, engine, isLocalBlock), mux
 }

@@ -23,7 +23,7 @@ import (
 	"strings"
 
 	"github.com/aswedchain/aswed/core/asm"
-	"gopkg.in/urfave/cli.v1"
+	cli "gopkg.in/urfave/cli.v1"
 )
 
 var disasmCommand = cli.Command{

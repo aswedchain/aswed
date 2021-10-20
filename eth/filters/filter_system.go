@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aswedchain/aswed"
+	ethereum "github.com/aswedchain/aswed"
 	"github.com/aswedchain/aswed/common"
 	"github.com/aswedchain/aswed/core"
 	"github.com/aswedchain/aswed/core/rawdb"

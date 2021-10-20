@@ -25,8 +25,8 @@ import (
 	"path/filepath"
 
 	"github.com/aswedchain/aswed/core"
+	"github.com/aswedchain/aswed/eth"
 	"github.com/aswedchain/aswed/eth/downloader"
-	"github.com/aswedchain/aswed/eth/ethconfig"
 	"github.com/aswedchain/aswed/ethclient"
 	"github.com/aswedchain/aswed/ethstats"
 	"github.com/aswedchain/aswed/internal/debug"
@@ -161,7 +161,7 @@ func NewNode(datadir string, config *NodeConfig) (stack *Node, _ error) {
 	}
 	// Register the Ethereum protocol if requested
 	if config.EthereumEnabled {
-		ethConf := ethconfig.Defaults
+		ethConf := eth.DefaultConfig
 		ethConf.Genesis = genesis
 		ethConf.SyncMode = downloader.LightSync
 		ethConf.NetworkId = uint64(config.EthereumNetworkID)

@@ -47,11 +47,6 @@ var (
 		Usage: "Specifies where output files are placed. Will be created if it does not exist.",
 		Value: "",
 	}
-	OutputBodyFlag = cli.StringFlag{
-		Name:  "output.body",
-		Usage: "If set, the RLP of the transactions (block body) will be written to this file.",
-		Value: "",
-	}
 	OutputAllocFlag = cli.StringFlag{
 		Name: "output.alloc",
 		Usage: "Determines where to put the `alloc` of the post-state.\n" +
@@ -79,10 +74,8 @@ var (
 		Value: "env.json",
 	}
 	InputTxsFlag = cli.StringFlag{
-		Name: "input.txs",
-		Usage: "`stdin` or file name of where to find the transactions to apply. " +
-			"If the file prefix is '.rlp', then the data is interpreted as an RLP list of signed transactions." +
-			"The '.rlp' format is identical to the output.body format.",
+		Name:  "input.txs",
+		Usage: "`stdin` or file name of where to find the transactions to apply.",
 		Value: "txs.json",
 	}
 	RewardFlag = cli.Int64Flag{
