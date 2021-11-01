@@ -782,15 +782,15 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 	group.Add(1)
 	defer group.Done()
 
-	for number := range numberCh { // 获取任务
-		if number == nil {
+	for numberPtr := range numberCh { // 获取任务
+		if numberPtr == nil {
 			return // 退出
 		}
-
-		item := make(map[string]interface{})
+		number := *numberPtr
+		item := make(map[string]interface{}) // 结果数据
 		// 获取区块数据，含交易
 		var txs = make(map[common.Hash]*types.Transaction)
-		block, err := s.b.BlockByNumber(ctx, rpc.BlockNumber(*number))
+		block, err := s.b.BlockByNumber(ctx, rpc.BlockNumber(number))
 		if err != nil {
 			item["error"] = err
 			itemch <- item
@@ -827,13 +827,13 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 		for _, receipt := range receipts {
 			// Derive the sender.
 			tx := txs[receipt.TxHash]
-			bigblock := new(big.Int).SetInt64(*number)
+			bigblock := new(big.Int).SetInt64(number)
 			signer := types.MakeSigner(s.b.ChainConfig(), bigblock)
 			from, _ := types.Sender(signer, tx)
 
 			fields := map[string]interface{}{
 				"blockHash":         blockHash,
-				"blockNumber":       bigblock.Uint64(),
+				"blockNumber":       hexutil.Uint64(number),
 				"transactionHash":   tx.Hash(),
 				"transactionIndex":  hexutil.Uint64(receipt.TransactionIndex),
 				"from":              from,
@@ -860,12 +860,10 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 			}
 			receiptsData = append(receiptsData, fields)
 		}
-
-		item = make(map[string]interface{}) // 返回结果
 		item["receipts"] = receiptsData
 
 		// 获取合约内部交易
-		if *number > 0 { // 创世块没有trace信息
+		if number > 0 { // 创世块没有trace信息
 			traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
 			if err != nil {
 				item["error"] = err
