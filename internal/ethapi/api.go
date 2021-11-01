@@ -849,8 +849,6 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 	if failed != nil {
 		return nil, failed
 	}
-
-	log.Warn("获取区块数据", "start", number, "count", count, "result",result)
 	return result, nil
 }
 
@@ -866,7 +864,6 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 			return // 退出
 		}
 		number := *numberPtr
-		log.Warn("getBlockByNumber", "number", number)
 		item := make(map[string]interface{}) // 返回结果
 		// 获取区块数据，含交易
 		var txs = make(map[common.Hash]*types.Transaction)
@@ -886,12 +883,10 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 		data, err := s.rpcMarshalBlock(ctx, block, true, true)
 		if err != nil {
 			item["error"] = err
-			log.Warn("getBlockByNumber block", "number", number, "error", err, "item", item)
 			itemch <- item
 			return
 		}else{
 			item["block"] = data
-			log.Warn("getBlockByNumber block", "number", number, "block", data, "item", item)
 		}
 		blockHash := block.Hash()
 		for _,tx := range block.Transactions(){
