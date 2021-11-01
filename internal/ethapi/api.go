@@ -21,9 +21,11 @@ import (
 	"errors"
 	"fmt"
 	"math/big"
+	"runtime"
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/aswedchain/aswed/accounts"
@@ -805,32 +807,93 @@ func (s *PublicBlockChainAPI) GetBlockByNumber(ctx context.Context, number rpc.B
 	return nil, err
 }
 
+
 // GetBlocksByNumber returns the requested canonical block.
 // 仅支持数字区块高度
-//   only the transaction hash is returned.
 func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.BlockNumber, count int64) ([]map[string]interface{}, error) {
-	var result []map[string]interface{}
+
+	var result []map[string]interface{} // 最终返回结果
+	itemCh := make(chan map[string]interface{}, count) // 协程返回结果通道
+	numberCh := make(chan *int64, count) // 协程下发任务通道
+	var group sync.WaitGroup // 协程的计数及等待
+
+	// 多线程操作，提升CPU效率
+	threadCount := runtime.NumCPU()
+	if threadCount > int(count) {
+		threadCount = int(count)
+	}
+	// 只开有限的线程数
+	for i := 0; i < threadCount; i++ {
+		go s.getBlockByNumber(ctx, group, itemCh, numberCh)
+	}
+	// 推送任务
 	for i:=int64(0);i<count;i++ {
-		var item = make(map[string]interface{})
-		blockHash := common.Hash{}
+		number := number.Int64()+i
+		numberCh <- &number
+	}
+	// 提取结果
+	var failed error = nil
+	for item := range itemCh {
+		if err, exist := item["error"];exist{ // 检查错误消息
+			failed = err.(error)
+			break // 有失败任务
+		}
+		result = append(result, item)
+		if len(result) >= int(count) {
+			break // 任务全部完成
+		}
+	}
+	close(numberCh) // 通知所有协程退出
+	group.Wait() // 等待协程退出
+
+	if failed != nil {
+		return nil, failed
+	}
+
+	log.Warn("获取区块数据", "start", number, "count", count, "result",result)
+	return result, nil
+}
+
+// getBlockByNumber returns the requested canonical block.
+// 仅支持数字区块高度
+func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.WaitGroup, itemch chan map[string]interface{}, numberCh chan *int64) {
+
+	group.Add(1)
+	defer group.Done()
+
+	for numberPtr := range numberCh { // 获取任务
+		if numberPtr == nil {
+			return // 退出
+		}
+		number := *numberPtr
+		log.Warn("getBlockByNumber", "number", number)
+		item := make(map[string]interface{}) // 返回结果
 		// 获取区块数据，含交易
-		blockNumber :=  number.Int64()+i
 		var txs = make(map[common.Hash]*types.Transaction)
-		block, err := s.b.BlockByNumber(ctx, rpc.BlockNumber(blockNumber))
+		block, err := s.b.BlockByNumber(ctx, rpc.BlockNumber(number))
 		if err != nil {
-			return nil, err
+			item["error"] = err
+			itemch <- item
+			return
 		}
 		if block == nil {
-			return nil, errors.New(fmt.Sprintf("block %d not found", blockNumber))
+			err := errors.New(fmt.Sprintf("block %d not found", number))
+			item["error"] = err
+			itemch <- item
+			return
 		}
 
 		data, err := s.rpcMarshalBlock(ctx, block, true, true)
 		if err != nil {
-			return nil, err
+			item["error"] = err
+			log.Warn("getBlockByNumber block", "number", number, "error", err, "item", item)
+			itemch <- item
+			return
 		}else{
 			item["block"] = data
+			log.Warn("getBlockByNumber block", "number", number, "block", data, "item", item)
 		}
-		blockHash = block.Hash()
+		blockHash := block.Hash()
 		for _,tx := range block.Transactions(){
 			txs[tx.Hash()] = tx
 		}
@@ -838,19 +901,21 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 		// 获取收据
 		receipts, err := s.b.GetReceipts(ctx, blockHash)
 		if err != nil {
-			return nil, err
+			item["error"] = err
+			itemch <- item
+			return
 		}
 		var receiptsData []map[string]interface{}
 		for _, receipt := range receipts {
 			// Derive the sender.
 			tx := txs[receipt.TxHash]
-			bigblock := new(big.Int).SetInt64(blockNumber)
+			bigblock := new(big.Int).SetInt64(number)
 			signer := types.MakeSigner(s.b.ChainConfig(), bigblock)
 			from, _ := types.Sender(signer, tx)
 
 			fields := map[string]interface{}{
 				"blockHash":         blockHash,
-				"blockNumber":       hexutil.Uint64(blockNumber),
+				"blockNumber":       hexutil.Uint64(number),
 				"transactionHash":   tx.Hash(),
 				"transactionIndex":  hexutil.Uint64(receipt.TransactionIndex),
 				"from":              from,
@@ -860,15 +925,8 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 				"contractAddress":   nil,
 				"logs":              receipt.Logs,
 				"logsBloom":         receipt.Bloom,
-				"type":              hexutil.Uint(tx.Type()),
 			}
-			// Assign the effective gas price paid
-			if !s.b.ChainConfig().IsLondon(bigblock) {
-				fields["effectiveGasPrice"] = hexutil.Uint64(tx.GasPrice().Uint64())
-			} else {
-				gasPrice := new(big.Int).Add(block.Header().BaseFee, tx.EffectiveGasTipValue(block.Header().BaseFee))
-				fields["effectiveGasPrice"] = hexutil.Uint64(gasPrice.Uint64())
-			}
+
 			// Assign receipt status or post state.
 			if len(receipt.PostState) > 0 {
 				fields["root"] = hexutil.Bytes(receipt.PostState)
@@ -885,17 +943,113 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 			receiptsData = append(receiptsData, fields)
 		}
 		item["receipts"] = receiptsData
-		result = append(result, item)
 
 		// 获取合约内部交易
-		traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
-		if err != nil {
-			return nil, err
+		if number > 0 { // 创世块没有trace信息
+			traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
+			if err != nil {
+				item["error"] = err
+				itemch <- item
+				return
+			}
+			item["traces"] = traces
 		}
-		item["traces"] = traces
+
+		itemch <- item // 返回结果
 	}
-	return result, nil
 }
+
+//// GetBlocksByNumber returns the requested canonical block.
+//// 仅支持数字区块高度
+////   only the transaction hash is returned.
+//func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.BlockNumber, count int64) ([]map[string]interface{}, error) {
+//	var result []map[string]interface{}
+//	for i:=int64(0);i<count;i++ {
+//		var item = make(map[string]interface{})
+//		blockHash := common.Hash{}
+//		// 获取区块数据，含交易
+//		blockNumber :=  number.Int64()+i
+//		var txs = make(map[common.Hash]*types.Transaction)
+//		block, err := s.b.BlockByNumber(ctx, rpc.BlockNumber(blockNumber))
+//		if err != nil {
+//			return nil, err
+//		}
+//		if block == nil {
+//			return nil, errors.New(fmt.Sprintf("block %d not found", blockNumber))
+//		}
+//
+//		data, err := s.rpcMarshalBlock(ctx, block, true, true)
+//		if err != nil {
+//			return nil, err
+//		}else{
+//			item["block"] = data
+//		}
+//		blockHash = block.Hash()
+//		for _,tx := range block.Transactions(){
+//			txs[tx.Hash()] = tx
+//		}
+//
+//		// 获取收据
+//		receipts, err := s.b.GetReceipts(ctx, blockHash)
+//		if err != nil {
+//			return nil, err
+//		}
+//		var receiptsData []map[string]interface{}
+//		for _, receipt := range receipts {
+//			// Derive the sender.
+//			tx := txs[receipt.TxHash]
+//			bigblock := new(big.Int).SetInt64(blockNumber)
+//			signer := types.MakeSigner(s.b.ChainConfig(), bigblock)
+//			from, _ := types.Sender(signer, tx)
+//
+//			fields := map[string]interface{}{
+//				"blockHash":         blockHash,
+//				"blockNumber":       hexutil.Uint64(blockNumber),
+//				"transactionHash":   tx.Hash(),
+//				"transactionIndex":  hexutil.Uint64(receipt.TransactionIndex),
+//				"from":              from,
+//				"to":                tx.To(),
+//				"gasUsed":           hexutil.Uint64(receipt.GasUsed),
+//				"cumulativeGasUsed": hexutil.Uint64(receipt.CumulativeGasUsed),
+//				"contractAddress":   nil,
+//				"logs":              receipt.Logs,
+//				"logsBloom":         receipt.Bloom,
+//				"type":              hexutil.Uint(tx.Type()),
+//			}
+//			// Assign the effective gas price paid
+//			if !s.b.ChainConfig().IsLondon(bigblock) {
+//				fields["effectiveGasPrice"] = hexutil.Uint64(tx.GasPrice().Uint64())
+//			} else {
+//				gasPrice := new(big.Int).Add(block.Header().BaseFee, tx.EffectiveGasTipValue(block.Header().BaseFee))
+//				fields["effectiveGasPrice"] = hexutil.Uint64(gasPrice.Uint64())
+//			}
+//			// Assign receipt status or post state.
+//			if len(receipt.PostState) > 0 {
+//				fields["root"] = hexutil.Bytes(receipt.PostState)
+//			} else {
+//				fields["status"] = hexutil.Uint(receipt.Status)
+//			}
+//			if receipt.Logs == nil {
+//				fields["logs"] = [][]*types.Log{}
+//			}
+//			// If the ContractAddress is 20 0x0 bytes, assume it is not a contract creation
+//			if receipt.ContractAddress != (common.Address{}) {
+//				fields["contractAddress"] = receipt.ContractAddress
+//			}
+//			receiptsData = append(receiptsData, fields)
+//		}
+//		item["receipts"] = receiptsData
+//		result = append(result, item)
+//
+//		// 获取合约内部交易
+//		traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
+//		if err != nil {
+//			return nil, err
+//		}
+//		item["traces"] = traces
+//	}
+//	return result, nil
+//}
 
 // GetBlockByHash returns the requested block. When fullTx is true all transactions in the block are returned in full
 // detail, otherwise only the transaction hash is returned.
