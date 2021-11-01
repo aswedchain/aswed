@@ -23,12 +23,13 @@ import (
 	"fmt"
 	"github.com/aswedchain/aswed/consensus"
 	"math/big"
+	"runtime"
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
-	"github.com/davecgh/go-spew/spew"
 	"github.com/aswedchain/aswed/accounts"
 	"github.com/aswedchain/aswed/accounts/abi"
 	"github.com/aswedchain/aswed/accounts/keystore"
@@ -47,6 +48,7 @@ import (
 	"github.com/aswedchain/aswed/params"
 	"github.com/aswedchain/aswed/rlp"
 	"github.com/aswedchain/aswed/rpc"
+	"github.com/davecgh/go-spew/spew"
 	"github.com/tyler-smith/go-bip39"
 )
 
@@ -731,26 +733,81 @@ func (s *PublicBlockChainAPI) GetBlockByNumber(ctx context.Context, number rpc.B
 
 // GetBlocksByNumber returns the requested canonical block.
 // 仅支持数字区块高度
-//   only the transaction hash is returned.
 func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.BlockNumber, count int64) ([]map[string]interface{}, error) {
-	var result []map[string]interface{}
+
+	var result []map[string]interface{} // 最终返回结果
+	itemCh := make(chan map[string]interface{}, count) // 协程返回结果通道
+	numberCh := make(chan *int64, count) // 协程下发任务通道
+	var group sync.WaitGroup // 协程的计数及等待
+
+	// 多线程操作，提升CPU效率
+	threadCount := runtime.NumCPU()
+	if threadCount > int(count) {
+		threadCount = int(count)
+	}
+	// 只开有限的线程数
+	for i := 0; i < threadCount; i++ {
+		go s.getBlockByNumber(ctx, group, itemCh, numberCh)
+	}
+	// 推送任务
 	for i:=int64(0);i<count;i++ {
-		var item = make(map[string]interface{})
-		//blockHash := common.Hash{}
+		number := number.Int64()+i
+		numberCh <- &number
+	}
+	// 提取结果
+	var failed error = nil
+	for item := range itemCh {
+		if err, exist := item["error"];exist{ // 检查错误消息
+			failed = err.(error)
+			break // 有失败任务
+		}
+		result = append(result, item)
+		if len(result) >= int(count) {
+			break // 任务全部完成
+		}
+	}
+	close(numberCh)
+	group.Wait() // 等待协程退出
+
+	if failed != nil {
+		return nil, failed
+	}
+	return result, nil
+}
+
+// getBlockByNumber returns the requested canonical block.
+// 仅支持数字区块高度
+func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.WaitGroup, itemch chan map[string]interface{}, numberCh chan *int64) {
+
+	group.Add(1)
+	defer group.Done()
+
+	for number := range numberCh { // 获取任务
+		if number == nil {
+			return // 退出
+		}
+
+		item := make(map[string]interface{})
 		// 获取区块数据，含交易
-		blockNumber :=  number.Int64()+i
 		var txs = make(map[common.Hash]*types.Transaction)
-		block, err := s.b.BlockByNumber(ctx, rpc.BlockNumber(blockNumber))
+		block, err := s.b.BlockByNumber(ctx, rpc.BlockNumber(*number))
 		if err != nil {
-			return nil, err
+			item["error"] = err
+			itemch <- item
+			return
 		}
 		if block == nil {
-			return nil, errors.New(fmt.Sprintf("block %d not found", blockNumber))
+			err := errors.New(fmt.Sprintf("block %d not found", number))
+			item["error"] = err
+			itemch <- item
+			return
 		}
 
 		data, err := s.rpcMarshalBlock(ctx, block, true, true)
 		if err != nil {
-			return nil, err
+			item["error"] = err
+			itemch <- item
+			return
 		}else{
 			item["block"] = data
 		}
@@ -762,19 +819,21 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 		// 获取收据
 		receipts, err := s.b.GetReceipts(ctx, blockHash)
 		if err != nil {
-			return nil, err
+			item["error"] = err
+			itemch <- item
+			return
 		}
 		var receiptsData []map[string]interface{}
 		for _, receipt := range receipts {
 			// Derive the sender.
 			tx := txs[receipt.TxHash]
-			bigblock := new(big.Int).SetInt64(blockNumber)
+			bigblock := new(big.Int).SetInt64(*number)
 			signer := types.MakeSigner(s.b.ChainConfig(), bigblock)
 			from, _ := types.Sender(signer, tx)
 
 			fields := map[string]interface{}{
 				"blockHash":         blockHash,
-				"blockNumber":       hexutil.Uint64(blockNumber),
+				"blockNumber":       bigblock.Uint64(),
 				"transactionHash":   tx.Hash(),
 				"transactionIndex":  hexutil.Uint64(receipt.TransactionIndex),
 				"from":              from,
@@ -801,20 +860,23 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 			}
 			receiptsData = append(receiptsData, fields)
 		}
+
+		item = make(map[string]interface{}) // 返回结果
 		item["receipts"] = receiptsData
-		result = append(result, item)
 
 		// 获取合约内部交易
-		if blockNumber > 0 { // 创世块没有trace信息
+		if *number > 0 { // 创世块没有trace信息
 			traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
 			if err != nil {
-				return nil, err
+				item["error"] = err
+				itemch <- item
+				return
 			}
 			item["traces"] = traces
 		}
 
+		itemch <- item // 返回结果
 	}
-	return result, nil
 }
 
 // GetBlockByHash returns the requested block. When fullTx is true all transactions in the block are returned in full
