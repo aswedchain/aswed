@@ -576,6 +576,7 @@ func (api *API) traceBlock(ctx context.Context, block *types.Block, config *Trac
 			}
 		}()
 	}
+	//time1 := time.Now()
 	// Feed the transactions into the tracers and return
 	var failed error
 	for i, tx := range txs {
@@ -608,8 +609,10 @@ func (api *API) traceBlock(ctx context.Context, block *types.Block, config *Trac
 		statedb.Finalise(vmenv.ChainConfig().IsEIP158(block.Number()))
 	}
 	close(jobs)
+	//time2 := time.Now()
+	//log.Warn("block["+block.Number().String()+"]发送tracetx任务耗时", "diff", time2.Sub(time1))
 	pend.Wait()
-
+	//log.Warn("block["+block.Number().String()+"]等待tracetx任务耗时", "diff", time.Now().Sub(time2))
 	// If execution failed in between, abort
 	if failed != nil {
 		return nil, failed
@@ -865,6 +868,8 @@ func (api *API) traceTx(ctx context.Context, message core.Message, txctx *Contex
 		err       error
 		txContext = core.NewEVMTxContext(message)
 	)
+	//time1 := time.Now()
+
 	switch {
 	case config != nil && config.Tracer != nil:
 		// Define a meaningful timeout of a single transaction trace
@@ -904,7 +909,7 @@ func (api *API) traceTx(ctx context.Context, message core.Message, txctx *Contex
 	if err != nil {
 		return nil, fmt.Errorf("tracing failed: %w", err)
 	}
-
+	//log.Warn("trace tx["+txctx.TxHash.String()+"]耗时", "diff", time.Now().Sub(time1))
 	return api.traceResult(tracer, result)
 }
 

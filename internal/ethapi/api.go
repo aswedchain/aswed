@@ -817,6 +817,8 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 	numberCh := make(chan *int64, count) // 协程下发任务通道
 	var group sync.WaitGroup // 协程的计数及等待
 
+	//time1 := time.Now()
+
 	// 多线程操作，提升CPU效率
 	threadCount := runtime.NumCPU()
 	if threadCount > int(count) {
@@ -849,6 +851,7 @@ func (s *PublicBlockChainAPI) GetBlocksByNumber(ctx context.Context, number rpc.
 	if failed != nil {
 		return nil, failed
 	}
+	//log.Warn("完整耗时：", "diff", time.Now().Sub(time1))
 	return result, nil
 }
 
@@ -863,6 +866,7 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 		if numberPtr == nil {
 			return // 退出
 		}
+		//time2 := time.Now()
 		number := *numberPtr
 		item := make(map[string]interface{}) // 返回结果
 		// 获取区块数据，含交易
@@ -888,6 +892,9 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 		}else{
 			item["block"] = data
 		}
+		//time3 := time.Now()
+		bigblock := new(big.Int).SetInt64(number)
+		//log.Warn("块["+ bigblock.String() +"] block耗时", "diff", time3.Sub(time2))
 		blockHash := block.Hash()
 		for _,tx := range block.Transactions(){
 			txs[tx.Hash()] = tx
@@ -901,11 +908,10 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 			return
 		}
 		var receiptsData []map[string]interface{}
+		signer := types.MakeSigner(s.b.ChainConfig(), bigblock)
 		for _, receipt := range receipts {
 			// Derive the sender.
 			tx := txs[receipt.TxHash]
-			bigblock := new(big.Int).SetInt64(number)
-			signer := types.MakeSigner(s.b.ChainConfig(), bigblock)
 			from, _ := types.Sender(signer, tx)
 
 			fields := map[string]interface{}{
@@ -938,18 +944,23 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 			receiptsData = append(receiptsData, fields)
 		}
 		item["receipts"] = receiptsData
+		//time4 := time.Now()
+		//log.Warn("块["+ bigblock.String() +"] receipts耗时", "diff", time4.Sub(time3))
 
-		// 获取合约内部交易
-		if number > 0 { // 创世块没有trace信息
-			traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
-			if err != nil {
-				item["error"] = err
-				itemch <- item
-				return
-			}
-			item["traces"] = traces
-		}
+		//// 获取合约内部交易
+		//if number > 0 { // 创世块没有trace信息
+		//	traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
+		//	if err != nil {
+		//		item["error"] = err
+		//		itemch <- item
+		//		return
+		//	}
+		//	item["traces"] = traces
+		//
+		//	log.Warn("块["+ bigblock.String() +"] traces耗时", "diff", time.Now().Sub(time4))
+		//}
 
+		//log.Warn("块["+ bigblock.String() +"] 耗时", "diff", time.Now().Sub(time2))
 		itemch <- item // 返回结果
 	}
 }
