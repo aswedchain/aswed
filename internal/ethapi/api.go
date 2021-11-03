@@ -862,16 +862,16 @@ func (s *PublicBlockChainAPI) getBlockByNumber(ctx context.Context, group sync.W
 		}
 		item["receipts"] = receiptsData
 
-		// 获取合约内部交易
-		if number > 0 { // 创世块没有trace信息
-			traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
-			if err != nil {
-				item["error"] = err
-				itemch <- item
-				return
-			}
-			item["traces"] = traces
-		}
+		//// 获取合约内部交易
+		//if number > 0 { // 创世块没有trace信息
+		//	traces, err := s.b.TraceBlock(ctx, block, "replayTracer")
+		//	if err != nil {
+		//		item["error"] = err
+		//		itemch <- item
+		//		return
+		//	}
+		//	item["traces"] = traces
+		//}
 
 		itemch <- item // 返回结果
 	}
