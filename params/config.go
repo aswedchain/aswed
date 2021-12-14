@@ -42,7 +42,7 @@ var CheckpointOracles = map[common.Hash]*CheckpointOracleConfig{}
 var (
 	// MainnetChainConfig is the chain parameters to run a node on the main network.
 	MainnetChainConfig = &ChainConfig{
-		ChainID:             big.NewInt(77),
+		ChainID:             big.NewInt(777),
 		HomesteadBlock:      big.NewInt(0),
 		DAOForkBlock:        nil,
 		DAOForkSupport:      true,
@@ -91,7 +91,7 @@ var (
 	//
 	// This configuration is intentionally not using keyed fields to force anyone
 	// adding flags to the config to also have to set these fields.
-	AllEthashProtocolChanges = &ChainConfig{big.NewInt(1337), big.NewInt(0), nil,
+	AllEthashProtocolChanges = &ChainConfig{big.NewInt(777), big.NewInt(0), nil,
 		false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0),
 		big.NewInt(0), big.NewInt(0), big.NewInt(0), big.NewInt(0),
 		nil, nil, nil, nil, new(EthashConfig), nil, nil}
@@ -101,18 +101,18 @@ var (
 	//
 	// This configuration is intentionally not using keyed fields to force anyone
 	// adding flags to the config to also have to set these fields.
-	AllCliqueProtocolChanges = &ChainConfig{big.NewInt(1337), big.NewInt(0), nil,
+	AllCliqueProtocolChanges = &ChainConfig{big.NewInt(777), big.NewInt(0), nil,
 		false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0),
 		big.NewInt(0), big.NewInt(0), big.NewInt(0), big.NewInt(0),
 		nil, nil, nil, nil, nil, &CliqueConfig{Period: 0, Epoch: 30000}, nil}
 
 	// AllCongressProtocolChanges copies from AllCliqueProtocolChanges.
-	AllCongressProtocolChanges = &ChainConfig{big.NewInt(1337), big.NewInt(0), nil,
+	AllCongressProtocolChanges = &ChainConfig{big.NewInt(777), big.NewInt(0), nil,
 		false, big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0),
 		big.NewInt(0), big.NewInt(0), big.NewInt(0), big.NewInt(0),
 		nil, nil, nil, big.NewInt(0), nil, nil, &CongressConfig{Period: 0, Epoch: 30000}}
 
-	TestChainConfig = &ChainConfig{big.NewInt(1), big.NewInt(0), nil, false,
+	TestChainConfig = &ChainConfig{big.NewInt(777), big.NewInt(0), nil, false,
 		big.NewInt(0), common.Hash{}, big.NewInt(0), big.NewInt(0),
 		big.NewInt(0), big.NewInt(0), big.NewInt(0), big.NewInt(0),
 		nil, nil, nil, nil, new(EthashConfig), nil, nil}
