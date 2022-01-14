@@ -1182,6 +1182,9 @@ func (c *Congress) ValidateTx(tx *types.Transaction, header *types.Header, paren
 	// Must use the parent state for current validation,
 	// so we must starting the validation after redCoastBlock
 	if c.chainConfig.RedCoastBlock != nil && c.chainConfig.RedCoastBlock.Cmp(header.Number) < 0 {
+		snap := parentState.Snapshot()
+		defer parentState.RevertToSnapshot(snap)
+
 		from, err := types.Sender(c.signer, tx)
 		if err != nil {
 			return err

@@ -714,6 +714,52 @@ func (s *StateDB) Copy() *StateDB {
 	return state
 }
 
+func (s *StateDB) JsonState() string {
+	result := ""
+	str := "["
+	for address, _ := range s.stateObjectsPending {
+		str += address.String() + ", "
+	}
+	str += "]"
+	result += "stateObjectsPending: " + str + ", "
+
+	str = "["
+	for address, obj := range s.stateObjects {
+		str += fmt.Sprintf("%s(deleted:%t, suicided:%t, balance:%s, nonce:%d, addrHash:%s), ",
+			address.String(), obj.deleted, obj.suicided, obj.Balance().String(), obj.Nonce(), obj.addrHash.String())
+	}
+	str += "]"
+	result += "stateObjects: " + str + ", "
+
+	str = "["
+	for address, _ := range s.stateObjectsDirty {
+		str += address.String() + ", "
+	}
+	str += "]"
+	result += "stateObjectsDirty: " + str + ", "
+
+	str = "["
+	for address, count := range s.journal.dirties {
+		str += fmt.Sprintf("%s(changes:%d), ", address.String(), count)
+	}
+	str += "]"
+	result += "journal.dirties: " + str + ", "
+
+	str = "["
+	for _, revision := range s.validRevisions {
+		str += fmt.Sprintf("%d => %d, ", revision.id, revision.journalIndex)
+	}
+	str += "]"
+	result += "validRevisions: " + str + ", "
+
+	str = "["
+	str += fmt.Sprintf("%d, ", s.nextRevisionId)
+	str += "]"
+	result += "nextRevisionId: " + str + ", "
+
+	return result
+}
+
 // Snapshot returns an identifier for the current revision of the state.
 func (s *StateDB) Snapshot() int {
 	id := s.nextRevisionId

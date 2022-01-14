@@ -25,7 +25,6 @@ import (
 	"sync/atomic"
 	"time"
 
-	mapset "github.com/deckarep/golang-set"
 	"github.com/aswedchain/aswed/common"
 	"github.com/aswedchain/aswed/consensus"
 	"github.com/aswedchain/aswed/core"
@@ -35,6 +34,7 @@ import (
 	"github.com/aswedchain/aswed/log"
 	"github.com/aswedchain/aswed/params"
 	"github.com/aswedchain/aswed/trie"
+	mapset "github.com/deckarep/golang-set"
 )
 
 const (
@@ -1017,7 +1017,8 @@ func (w *worker) commit(uncles []*types.Header, interval func(), update bool, st
 			log.Info("Commit new mining work", "number", block.Number(), "sealhash", w.engine.SealHash(block.Header()),
 				"uncles", len(uncles), "txs", w.current.tcount,
 				"gas", block.GasUsed(), "fees", totalFees(block, receipts),
-				"elapsed", common.PrettyDuration(time.Since(start)))
+				"elapsed", common.PrettyDuration(time.Since(start)),
+				"root", block.Root().String(), "blockhash", block.Hash().String())
 
 		case <-w.exitCh:
 			log.Info("Worker has exited")
